@@ -56,7 +56,7 @@ let C={...THEMES.dark};
 const UI={
 es:{newGame:"NUEVA PARTIDA",load:"CARGAR PARTIDA",pick:"Elegir seleccion",nation:"SELECCION",group:"GRUPO",stage:"ETAPA",next:"PROXIMO",
  elim:"Tu seleccion quedo eliminada. Podes seguir el torneo.",play:"JUGAR PARTIDO",simRound:"SIMULAR RONDA",
- squad:"PLANTEL (26)",tactics:"TACTICA Y ALINEACION",groups:"GRUPOS Y TERCEROS",bracket:"CUADRO FINAL",scorers:"GOLEADORES",
+ squad:"PLANTEL (26)",tactics:"TACTICA Y ALINEACION",groups:"GRUPOS Y TERCEROS",bracket:"CUADRO FINAL",scorers:"GOLEADORES",stats:"ESTADISTICAS",topAssist:"ASISTENCIAS",topRated:"MEJOR PROMEDIO",topG:"GOLEADORES",noStats:"Jugá partidos para ver estadísticas.",colG:"G",colA:"A",colPJ:"PJ",colAvg:"NOTA",
  save:"GUARDAR PARTIDA",exit:"SALIR AL MENU",back:"VOLVER",cont:"CONTINUAR",resume:"REANUDAR PARTIDO",pause:"PAUSA / CAMBIOS",
  instant:"RESULTADO INSTANTANEO",injured:"LESIONADOS",champ:"CAMPEON DEL MUNDO",congrats:"\u00a1\u00a1FELICITACIONES, DT!! \u00a1GLORIA ETERNA!",
  finished:"TORNEO FINALIZADO",pos:"POS",player:"JUGADOR",age:"EDAD",fit:"FIS",val:"VAL",rt:"NOTA",eff:"EF",diamond:"ROMBO",years:"a\u00f1os",card:"Ficha",
@@ -67,7 +67,7 @@ es:{newGame:"NUEVA PARTIDA",load:"CARGAR PARTIDA",pick:"Elegir seleccion",nation
  r32:"16AVOS DE FINAL",r16:"OCTAVOS",qf:"CUARTOS",sf:"SEMIFINALES",p3:"3ER PUESTO",final:"GRAN FINAL (MetLife, 19 jul)",
  tbd:"por definir",results:"Resultados",noGoals:"Todavia no se anotaron goles.",saved:"PARTIDA GUARDADA OK",
  saveErr:"ERROR AL GUARDAR",noSave:"NO HAY PARTIDA GUARDADA",final0:"FINAL",pens0:"PENALES",min:"MINUTO",pause0:"PAUSA",
- poss:"POSESION",shots:"TIROS",onT:"AL ARCO",yel0:"AMARILLAS",red0:"ROJAS",inj0:"LESIONES",dark:"OSCURO",light:"CLARO",
+ poss:"POSESION",shots:"TIROS",onT:"AL ARCO",yel0:"AMARILLAS",red0:"ROJAS",inj0:"LESIONES",dark:"OSCURO",light:"CLARO",ment:"MENTALIDAD",mDef:"DEFENSIVA",mBal:"EQUILIBRADA",mOfe:"OFENSIVA",
  sub1:"Cambio en",sub2:"sale",sub3:"entra",redCard:"(ROJA)",les:"LES",
  t1:"DT 2026",t2:"DIRECTOR TECNICO \u2014 NORTEAMERICA 2026",t3:"* homenaje al CM 93/94 *",donate:"INVITAME UN CAFECITO \u2615",donateMsg:"\u00bfTe gusto DT 2026? Apoya el proyecto",
  t4:"48 SELECCIONES - GRUPOS REALES<br/>PLANTELES REALES 2026",
@@ -76,7 +76,7 @@ es:{newGame:"NUEVA PARTIDA",load:"CARGAR PARTIDA",pick:"Elegir seleccion",nation
  attrGK:["Agilidad","Juego aereo","Vel. salida","Distribucion","Posicionam.","Saque largo","Juego pies","Reflejos","Mando area","Decisiones","Liderazgo","Atajadas"]},
 en:{newGame:"NEW GAME",load:"LOAD GAME",pick:"Choose your nation",nation:"NATION",group:"GROUP",stage:"STAGE",next:"NEXT",
  elim:"Your team is out. You can follow the tournament.",play:"PLAY MATCH",simRound:"SIMULATE ROUND",
- squad:"SQUAD (26)",tactics:"TACTICS & LINEUP",groups:"GROUPS & 3RD PLACES",bracket:"KNOCKOUT BRACKET",scorers:"TOP SCORERS",
+ squad:"SQUAD (26)",tactics:"TACTICS & LINEUP",groups:"GROUPS & 3RD PLACES",bracket:"KNOCKOUT BRACKET",scorers:"TOP SCORERS",stats:"STATISTICS",topAssist:"TOP ASSISTS",topRated:"BEST RATED",topG:"TOP SCORERS",noStats:"Play matches to see statistics.",colG:"G",colA:"A",colPJ:"GP",colAvg:"RTG",
  save:"SAVE GAME",exit:"EXIT TO MENU",back:"BACK",cont:"CONTINUE",resume:"RESUME MATCH",pause:"PAUSE / SUBS",
  instant:"INSTANT RESULT",injured:"INJURED",champ:"WORLD CHAMPION",congrats:"CONGRATULATIONS, GAFFER!! ETERNAL GLORY!",
  finished:"TOURNAMENT OVER",pos:"POS",player:"PLAYER",age:"AGE",fit:"FIT",val:"RAT",rt:"RTG",eff:"EFF",diamond:"DIAMOND",years:"yrs",card:"Profile",
@@ -87,7 +87,7 @@ en:{newGame:"NEW GAME",load:"LOAD GAME",pick:"Choose your nation",nation:"NATION
  r32:"ROUND OF 32",r16:"ROUND OF 16",qf:"QUARTER-FINALS",sf:"SEMI-FINALS",p3:"3RD PLACE",final:"GRAND FINAL (MetLife, Jul 19)",
  tbd:"to be decided",results:"Results",noGoals:"No goals scored yet.",saved:"GAME SAVED OK",
  saveErr:"SAVE ERROR",noSave:"NO SAVED GAME",final0:"FULL TIME",pens0:"PENALTIES",min:"MINUTE",pause0:"PAUSED",
- poss:"POSSESSION",shots:"SHOTS",onT:"ON TARGET",yel0:"YELLOWS",red0:"REDS",inj0:"INJURIES",dark:"DARK",light:"LIGHT",
+ poss:"POSSESSION",shots:"SHOTS",onT:"ON TARGET",yel0:"YELLOWS",red0:"REDS",inj0:"INJURIES",dark:"DARK",light:"LIGHT",ment:"MENTALITY",mDef:"DEFENSIVE",mBal:"BALANCED",mOfe:"ATTACKING",
  sub1:"Substitution",sub2:"off",sub3:"on",redCard:"(RED)",les:"INJ",
  t1:"DT 2026",t2:"THE GAFFER \u2014 NORTH AMERICA 2026",t3:"* a CM 93/94 tribute *",donate:"BUY ME A COFFEE \u2615",donateMsg:"Enjoyed DT 2026? Support the project",
  t4:"48 NATIONS - REAL GROUPS<br/>REAL 2026 SQUADS",
@@ -96,7 +96,7 @@ en:{newGame:"NEW GAME",load:"LOAD GAME",pick:"Choose your nation",nation:"NATION
  attrGK:["Agility","Aerial","Rushing out","Distribution","Positioning","Long kicks","Footwork","Reflexes","Command","Decisions","Leadership","Shot stopping"]},
 pt:{newGame:"NOVO JOGO",load:"CARREGAR JOGO",pick:"Escolha sua selecao",nation:"SELECAO",group:"GRUPO",stage:"FASE",next:"PROXIMO",
  elim:"Sua selecao foi eliminada. Voce pode acompanhar o torneio.",play:"JOGAR PARTIDA",simRound:"SIMULAR RODADA",
- squad:"ELENCO (26)",tactics:"TATICA E ESCALACAO",groups:"GRUPOS E TERCEIROS",bracket:"CHAVEAMENTO",scorers:"ARTILHEIROS",
+ squad:"ELENCO (26)",tactics:"TATICA E ESCALACAO",groups:"GRUPOS E TERCEIROS",bracket:"CHAVEAMENTO",scorers:"ARTILHEIROS",stats:"ESTATISTICAS",topAssist:"ASSISTENCIAS",topRated:"MELHOR MEDIA",topG:"ARTILHEIROS",noStats:"Jogue partidas para ver estatisticas.",colG:"G",colA:"A",colPJ:"J",colAvg:"NOTA",
  save:"SALVAR JOGO",exit:"SAIR AO MENU",back:"VOLTAR",cont:"CONTINUAR",resume:"RETOMAR PARTIDA",pause:"PAUSA / SUBSTITUICOES",
  instant:"RESULTADO INSTANTANEO",injured:"LESIONADOS",champ:"CAMPEAO DO MUNDO",congrats:"PARABENS, TREINADOR!! GLORIA ETERNA!",
  finished:"TORNEIO ENCERRADO",pos:"POS",player:"JOGADOR",age:"IDADE",fit:"FIS",val:"VAL",rt:"NOTA",eff:"EF",diamond:"LOSANGO",years:"anos",card:"Ficha",
@@ -107,7 +107,7 @@ pt:{newGame:"NOVO JOGO",load:"CARREGAR JOGO",pick:"Escolha sua selecao",nation:"
  r32:"16 AVOS DE FINAL",r16:"OITAVAS",qf:"QUARTAS",sf:"SEMIFINAIS",p3:"3o LUGAR",final:"GRANDE FINAL (MetLife, 19 jul)",
  tbd:"a definir",results:"Resultados",noGoals:"Nenhum gol marcado ainda.",saved:"JOGO SALVO OK",
  saveErr:"ERRO AO SALVAR",noSave:"NENHUM JOGO SALVO",final0:"FIM DE JOGO",pens0:"PENALTIS",min:"MINUTO",pause0:"PAUSA",
- poss:"POSSE",shots:"FINALIZACOES",onT:"NO GOL",yel0:"AMARELOS",red0:"VERMELHOS",inj0:"LESOES",dark:"ESCURO",light:"CLARO",
+ poss:"POSSE",shots:"FINALIZACOES",onT:"NO GOL",yel0:"AMARELOS",red0:"VERMELHOS",inj0:"LESOES",dark:"ESCURO",light:"CLARO",ment:"MENTALIDADE",mDef:"DEFENSIVA",mBal:"EQUILIBRADA",mOfe:"OFENSIVA",
  sub1:"Substituicao no",sub2:"sai",sub3:"entra",redCard:"(VERMELHO)",les:"LES",
  t1:"DT 2026",t2:"DIRETOR TECNICO \u2014 AMERICA DO NORTE 2026",t3:"* homenagem ao CM 93/94 *",donate:"ME PAGUE UM CAFE \u2615",donateMsg:"Gostou do DT 2026? Apoie o projeto",
  t4:"48 SELECOES - GRUPOS REAIS<br/>ELENCOS REAIS 2026",
@@ -362,6 +362,17 @@ function ageAll(R){
 const drainRate=p=>clampA(0.62-(p[16]-10)*0.025,0.2,0.8);
 const effLive=(p,pos,fit)=>effOf(p,pos)*(0.72+0.28*fit/100);
 
+// Mentalidad tactica: como afecta ataque/defensa/posesion
+// def(ensiva): se cierra, menos ataque + mas defensa | ofe(nsiva): al frente, mas ataque - defensa
+const MENTALITY={
+  def:{att:0.82,def:1.18,pos:-6},
+  bal:{att:1.00,def:1.00,pos:0},
+  ofe:{att:1.20,def:0.84,pos:7}
+};
+function mentOf(side,M){
+  const key=side==="H"?(M.menH||"bal"):(M.menA||"bal");
+  return MENTALITY[key]||MENTALITY.bal;
+}
 function liveStrength(side,M){
   const xi=side==="H"?M.xiH:M.xiA, fit=side==="H"?M.fitH:M.fitA, t=side==="H"?M.h:M.a;
   let aS=0,aW=0,dS=0,dW=0,on=0;
@@ -372,7 +383,8 @@ function liveStrength(side,M){
     aS+=eff*wa;aW+=wa;dS+=eff*wd;dW+=wd;
   });
   const men=Math.pow(on/11,1.25);
-  return {att:(aW?aS/aW:55)*men, def:(dW?dS/dW:55)*men, on};
+  const mt=mentOf(side,M);
+  return {att:(aW?aS/aW:55)*men*mt.att, def:(dW?dS/dW:55)*men*mt.def, on};
 }
 function liveScorer(side,M){
   const xi=side==="H"?M.xiH:M.xiA, t=side==="H"?M.h:M.a;
@@ -421,6 +433,17 @@ function stepMinute(M,myIdx,auto){
     const xi=side==="H"?M.xiH:M.xiA, fit=side==="H"?M.fitH:M.fitA, t=side==="H"?M.h:M.a;
     xi.forEach((e,si)=>{if(!e.off)fit[si]=Math.max(0,fit[si]-drainRate(M.R[t][e.idx]));});
   });
+  // IA tactica: el lado controlado por la maquina reacciona al marcador
+  if(m>=55&&m%5===0){
+    [["H",M.hg-M.ag,"menH","aiBaseH"],["A",M.ag-M.hg,"menA","aiBaseA"]].forEach(([side,diff,mk,bk])=>{
+      const isUserSide=(side==="H"&&M.h===M.userTeam)||(side==="A"&&M.a===M.userTeam);
+      if(isUserSide)return; // no tocar la del usuario
+      if(diff<=-1)M[mk]="ofe";        // pierde -> al ataque
+      else if(diff>=2&&m>=70)M[mk]="def"; // gana comodo y final -> aguanta
+      else if(diff>=1&&m>=80)M[mk]="def"; // gana al final -> cierra
+      else M[mk]="bal";
+    });
+  }
   const sH=liveStrength("H",M), sA=liveStrength("A",M);
   if(M.ratH&&m%5===0&&m>0){
     [["H",1],["A",-1]].forEach(([side,sg])=>{
@@ -434,7 +457,7 @@ function stepMinute(M,myIdx,auto){
     });
   }
   // posesion
-  const target=clampA(50+(sH.att+sH.def-sA.att-sA.def)*0.55,25,75);
+  const target=clampA(50+(sH.att+sH.def-sA.att-sA.def)*0.55+(mentOf("H",M).pos-mentOf("A",M).pos),25,75);
   M.pos=clampA(M.pos+(target-M.pos)*0.06+(Math.random()-0.5)*2.4,18,82);
   // eventos de ataque
   [["H",sH,sA,0],["A",sA,sH,1]].forEach(([side,me,op,ix])=>{
@@ -779,6 +802,7 @@ export default function App(){
   const [formation,setFormation]=useState("4-4-2");
   const [xi,setXi]=useState([]);
   const [slotSel,setSlotSel]=useState(null);
+  const [mentality,setMentality]=useState("bal");
   const [myFit,setMyFit]=useState([]);
   const [injuries,setInjuries]=useState({});
   const [scorers,setScorers]=useState({});
@@ -859,7 +883,7 @@ export default function App(){
     setGStats(a.map(()=>({pj:0,g:0,e:0,p:0,gf:0,gc:0,pts:0})));
     setResults({});setQual(null);setScorers({});setPstats({});
     setInjuries({});setMyFit([]);setXi([]);setSlotSel(null);
-    setFormation("4-4-2");setFicha(null);setMsg("");
+    setFormation("4-4-2");setMentality("bal");setFicha(null);setMsg("");
     MR.current=null;
   };
   const pickTeam=i=>{
@@ -904,7 +928,9 @@ export default function App(){
       fitA:xiA.map(e=>a===my?myFit[e.idx]:100),
       benchH:rosters[h].map((_,i)=>i).filter(i=>!inXH.has(i)&&!isInj(h,i)),
       benchA:rosters[a].map((_,i)=>i).filter(i=>!inXA.has(i)&&!isInj(a,i)),
-      subsH:5,subsA:5,yelCardsH:{},yelCardsA:{},minute:0,hg:0,ag:0,pos:50,
+      subsH:T.subs,subsA:T.subs,yelCardsH:{},yelCardsA:{},minute:0,hg:0,ag:0,pos:50,
+      menH:h===my?mentality:"bal",menA:a===my?mentality:"bal",userTeam:my,
+      aiBaseH:"bal",aiBaseA:"bal",
       ratH:xiH.map(()=>6),ratA:xiA.map(()=>6),assH:[],assA:[],exits:[],
       shots:[0,0],onT:[0,0],yel:[0,0],red:[0,0],inj:[0,0],sH:[],sA:[],
       log:[fmtNum(att)+" \u2014 "+ven[0]+" ("+ven[2]+")"],
@@ -920,6 +946,12 @@ export default function App(){
     },110);
   };
   const userSide=()=>MR.current&&(MR.current.h===my?"H":"A");
+  const setMent=(k)=>{
+    setMentality(k);
+    const M=MR.current;
+    if(M){const side=M.h===my?"menH":"menA";M[side]=k;setTick(t=>t+1);}
+  };
+
   const liveShape=(xiL)=>{
     // cuenta por linea segun posicion natural-grupo, excluye expulsados
     const grp=p=>{const g=({POR:"P",DFC:"D",LTD:"D",LTI:"D",CAD:"D",MCD:"M",MC:"M",MCO:"M",MP:"M",EXD:"A",EXI:"A",DC:"A",SD:"A"})[p]||"M";return g;};
@@ -1143,7 +1175,7 @@ export default function App(){
       <Btn onClick={()=>setScreen("tactics")}>{tr("tactics")}</Btn>
       <Btn onClick={()=>setScreen("groups")}>{tr("groups")}</Btn>
       <Btn onClick={()=>setScreen("bracket")}>{tr("bracket")}</Btn>
-      <Btn onClick={()=>setScreen("scorers")}>{tr("scorers")}</Btn>
+      <Btn onClick={()=>setScreen("stats")}>{tr("stats")}</Btn>
       <Btn onClick={()=>{setScreen("title");setMsg("");}} color={C.red}>{tr("exit")}</Btn>
       {msg&&<div style={{padding:10,color:C.grn,fontSize:12,fontWeight:"bold"}}>{msg}</div>}
     </div>);
@@ -1165,6 +1197,39 @@ export default function App(){
     <Btn onClick={()=>setScreen("menu")}>{tr("back")}</Btn>
   </div>);
 
+  // Coordenadas (x%,y%) por posicion para la mini-cancha (y=0 arriba=arco propio)
+  const PITCH_XY={POR:[50,92],DFC:[50,75],LTD:[82,72],LTI:[18,72],CAD:[50,72],MCD:[50,58],MC:[50,46],MCO:[50,34],MP:[50,28],EXD:[82,32],EXI:[18,32],DC:[50,16],SD:[38,20]};
+  const pitchPos=(pos,idx,sameCount,order)=>{
+    const base=PITCH_XY[pos]||[50,50];
+    let x=base[0],y=base[1];
+    if(sameCount>1){const spread=64/sameCount;x=18+spread*(order+0.5);} // repartir en la linea
+    return [x,y];
+  };
+  const Pitch=({xiL})=>{
+    const act=xiL.filter(e=>!e.off);
+    // agrupar por "linea" (misma y aproximada) para repartir en horizontal
+    const byPos={};act.forEach(e=>{(byPos[e.pos]=byPos[e.pos]||[]).push(e);});
+    const lines={};act.forEach(e=>{const y=(PITCH_XY[e.pos]||[50,50])[1];(lines[y]=lines[y]||[]).push(e);});
+    return <svg viewBox="0 0 100 100" style={{width:"100%",maxHeight:200,display:"block",background:C.statBg,borderBottom:"2px solid "+C.line}}>
+      <rect x="2" y="2" width="96" height="96" fill="none" stroke={C.line} strokeWidth="0.5"/>
+      <line x1="2" y1="50" x2="98" y2="50" stroke={C.line} strokeWidth="0.4"/>
+      <circle cx="50" cy="50" r="9" fill="none" stroke={C.line} strokeWidth="0.4"/>
+      <rect x="32" y="2" width="36" height="14" fill="none" stroke={C.line} strokeWidth="0.4"/>
+      <rect x="32" y="84" width="36" height="14" fill="none" stroke={C.line} strokeWidth="0.4"/>
+      {Object.values(lines).flatMap(arr=>arr.map((e,i)=>{
+        const y=(PITCH_XY[e.pos]||[50,50])[1];
+        const n=arr.length;
+        const x=n===1?(PITCH_XY[e.pos]||[50,50])[0]:(16+(68/n)*(i+0.5));
+        const p=rosters[my][e.idx];
+        const nm=p[0].length>9?p[0].slice(0,8):p[0];
+        return <g key={e.idx}>
+          <circle cx={x} cy={y} r="4.2" fill={C.cyan} stroke="#000" strokeWidth="0.4"/>
+          <text x={x} y={y+1.6} textAnchor="middle" fontSize="4.2" fontWeight="bold" fill="#000">{e.pos}</text>
+          <text x={x} y={y+8} textAnchor="middle" fontSize="3.6" fill={C.wht}>{nm}</text>
+        </g>;
+      }))}
+    </svg>;
+  };
   if(screen==="tactics"){
     const inXI=new Set(xi.map(e=>e.idx));
     const bench=rosters[my].map((_,i)=>i).filter(i=>!inXI.has(i));
@@ -1173,6 +1238,7 @@ export default function App(){
       <div style={{display:"flex",flexWrap:"wrap",borderBottom:"2px solid "+C.line}}>
         {Object.keys(FORMS).map(fk=><div key={fk} onClick={()=>changeForm(fk)} style={{padding:"7px 9px",cursor:"pointer",fontSize:11,fontWeight:"bold",background:fk===formation?C.gry:C.panel,color:fk===formation?"#000":C.yel}}>{fk.replace("ROMBO",tr("diamond"))}</div>)}
       </div>
+      <Pitch xiL={xi}/>
       <div style={{padding:"6px 12px",fontSize:11,color:C.cyan}}>{tr("starters")}</div>
       <div style={{padding:"2px 12px",fontSize:10,color:C.gry,display:"flex"}}>
         <span style={{width:38}}>{tr("pos")}</span><span style={{flex:1}}>{tr("player")}</span><span style={{width:36}}>{tr("fit")}</span><span style={{width:26,textAlign:"right"}}>{tr("eff")}</span>
@@ -1259,6 +1325,31 @@ export default function App(){
     </div>);
   }
 
+  if(screen==="stats"){
+    const rows=Object.entries(pstats).map(([k,v])=>{const ix=k.lastIndexOf("|");return {name:k.slice(0,ix),t:+k.slice(ix+1),...v,avg:v.pj?v.rs/v.pj:0};});
+    const empty=rows.length===0;
+    const topG=rows.filter(r=>r.g>0).sort((a,b)=>b.g-a.g||b.a-a.a).slice(0,10);
+    const topA=rows.filter(r=>r.a>0).sort((a,b)=>b.a-a.a||b.g-a.g).slice(0,10);
+    const topR=rows.filter(r=>r.pj>=2).sort((a,b)=>b.avg-a.avg).slice(0,10);
+    const Tabla=({title,list,val,fmt,col})=>(<div style={{marginBottom:10}}>
+      <div style={{padding:"5px 12px",fontSize:11,color:C.cyan,fontWeight:"bold",background:C.statBg}}>{title}</div>
+      {list.map((s,i)=><div key={i} style={{padding:"4px 12px",fontSize:12,display:"flex",alignItems:"center",borderBottom:"1px solid "+C.line2}}>
+        <span style={{width:22,color:i===0?C.yel:C.gry,fontSize:11}}>{i===0?"\u2605":i+1}</span>
+        <span style={{flex:1,color:s.t===my?C.yel:C.wht}}>{s.name} <Chip i={s.t}/></span>
+        <span style={{width:34,textAlign:"right",color:col,fontWeight:"bold"}}>{fmt(s)}</span>
+      </div>)}
+    </div>);
+    return wrap(<div>
+      <Bar t={tr("stats")}/>
+      {empty&&<div style={{padding:14,fontSize:13,color:C.gry}}>{tr("noStats")}</div>}
+      {!empty&&<div style={{maxHeight:430,overflowY:"auto"}}>
+        <Tabla title={"\u26bd "+tr("topG")} list={topG} fmt={s=>s.g} col={C.grn}/>
+        <Tabla title={tr("topAssist")} list={topA} fmt={s=>s.a} col={C.cyan}/>
+        <Tabla title={tr("topRated")+" ("+tr("colAvg")+")"} list={topR} fmt={s=>s.avg.toFixed(2)} col={C.yel}/>
+      </div>}
+      <Btn onClick={()=>setScreen("menu")}>{tr("back")}</Btn>
+    </div>);
+  }
   if(screen==="scorers"){
     const top=Object.entries(scorers).map(([k,g])=>{const ix=k.lastIndexOf("|");return {name:k.slice(0,ix),t:+k.slice(ix+1),g};}).sort((a,b)=>b.g-a.g).slice(0,15);
     return wrap(<div>
@@ -1307,6 +1398,13 @@ export default function App(){
       </div>
       {M.paused&&!M.done&&<div style={{borderTop:"2px solid "+C.barBorder,maxHeight:230,overflowY:"auto"}}>
         <div style={{padding:"4px 10px",fontSize:11,color:C.cyan,fontWeight:"bold"}}>{tr("subs")} {subsLeft}) {slotSel!==null?"\u2014 "+tr("subsIn"):"\u2014 "+tr("subsWho")} | {tr("form")}: {liveShape(xiU)}</div>
+        <div style={{display:"flex",gap:4,padding:"4px 10px",alignItems:"center"}}>
+          <span style={{fontSize:10,color:C.gry,width:70}}>{tr("ment")}</span>
+          {[["def",tr("mDef"),C.red],["bal",tr("mBal"),C.cyan],["ofe",tr("mOfe"),C.grn]].map(([k,lbl,col])=>{
+            const cur=(side==="H"?M.menH:M.menA)===k;
+            return <div key={k} onClick={()=>setMent(k)} style={{flex:1,textAlign:"center",padding:"4px 2px",cursor:"pointer",fontSize:10,fontWeight:"bold",background:cur?col:C.panel,color:cur?"#000":col,border:"1px solid "+C.line2}}>{lbl}</div>;
+          })}
+        </div>
         <div style={{padding:"2px 10px",fontSize:10,color:C.gry,display:"flex"}}>
           <span style={{width:34}}>{tr("pos")}</span><span style={{flex:1}}>{tr("player")}</span><span style={{width:30}}>{tr("rt")}</span><span style={{width:38}}>{tr("fit")}</span><span style={{width:24,textAlign:"right"}}>{tr("eff")}</span>
         </div>
