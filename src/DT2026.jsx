@@ -608,7 +608,8 @@ const VENUES_90=[["Stadio Olimpico",73603,"Roma"],["San Siro",85700,"Milan"],["S
 const VENUES_26=[["Estadio Azteca",87523,"Ciudad de Mexico"],["MetLife Stadium",82500,"Nueva York"],["AT&T Stadium",80000,"Dallas"],["Arrowhead Stadium",76416,"Kansas City"],["NRG Stadium",72220,"Houston"],["Mercedes-Benz Stadium",71000,"Atlanta"],["SoFi Stadium",70240,"Los Angeles"],["Lumen Field",69000,"Seattle"],["Levi's Stadium",68500,"San Francisco"],["Lincoln Financial Field",67594,"Filadelfia"],["Hard Rock Stadium",64767,"Miami"],["Gillette Stadium",64628,"Boston"],["Estadio BBVA",53500,"Monterrey"],["BC Place",54500,"Vancouver"],["Estadio Akron",46232,"Guadalajara"],["BMO Field",45736,"Toronto"]];
 const VENUES=VENUES_26;
 const STAGES=[["G1","FECHA 1 (11-17 jun)"],["G2","FECHA 2 (18-23 jun)"],["G3","FECHA 3 (24-27 jun)"],["R32","16AVOS (28 jun - 3 jul)"],["R16","OCTAVOS (4-7 jul)"],["QF","CUARTOS (9-11 jul)"],["SF","SEMIFINALES (14-15 jul)"],["P3","3ER PUESTO (18 jul)"],["F","GRAN FINAL (19 jul)"]];
-const LETTERS=["A","B","C","D","E","F","G","H","I","J","K","L"];
+const ALL_LETTERS=["A","B","C","D","E","F","G","H","I","J","K","L"];
+function GLETTERS(){return ALL_LETTERS.slice(0,T.groups);}
 const TCOL={A:0,B:1,D:2,E:3,G:4,I:5,K:6,L:7};
 
 // ============ ESTILOS RETRO ============
@@ -670,7 +671,18 @@ UZB:{t:"H",c:["#0099b5","#fff","#1eb53a"],o:[["rc","#ce1126",0,6.5,30,0.7],["rc"
 CRO:{t:"H",c:["#ff0000","#fff","#171796"],o:[["ck","#ff0000"]]},
 ENG:{t:"H",c:["#fff"],o:[["fc","#ce1124"]]},
 GHA:{t:"H",c:["#ce1126","#fcd116","#006b3f"],o:[["st","#000",15,6]]},
-PAN:{t:"Q",c:["#fff","#d21034","#005293","#fff"],o:[["st","#005293",7.5,6,5],["st","#d21034",22.5,6,15]]}
+PAN:{t:"Q",c:["#fff","#d21034","#005293","#fff"],o:[["st","#005293",7.5,6,5],["st","#d21034",22.5,6,15]]},
+// === Banderas Italia 1990 ===
+ITA:{t:"V",c:["#009246","#fff","#ce2b37"]},
+TCH:{t:"H",c:["#fff","#d7141a"],o:[["tr","#11457e",14]]},
+CMR:{t:"V",c:["#007a5e","#ce1126","#fcd116"],o:[["st","#fcd116",15,6]]},
+URS:{t:"H",c:["#cc0000"],o:[["hs","#ffd700"]]},
+ROU:{t:"V",c:["#002b7f","#fcd116","#ce1126"]},
+CRC:{t:"H",c:["#002b7f","#fff","#ce1126","#fff","#002b7f"],w:[1,1,2,1,1]},
+FRG:{t:"H",c:["#000","#dd0000","#ffce00"]},
+YUG:{t:"H",c:["#0c1c8c","#fff","#de2110"],o:[["st","#ffd700",15,7]]},
+UAE:{t:"H",c:["#00732f","#fff","#000"],o:[["rc","#ff0000",0,0,7,20]]},
+IRL:{t:"V",c:["#169b62","#fff","#ff883e"]}
 };
 function Flag({i,s}){
   const f=FLAGS[ALL[i].s]||{t:"H",c:["#888","#aaa"]};
@@ -706,6 +718,7 @@ function Flag({i,s}){
     else if(tp==="ck"){const sq=[];for(let r=0;r<2;r++)for(let q=0;q<3;q++)if((r+q)%2===0)sq.push(<rect key={r+"_"+q} x={12+q*2} y={7+r*2} width={2} height={2} fill={c}/>);else sq.push(<rect key={r+"_"+q} x={12+q*2} y={7+r*2} width={2} height={2} fill="#fff"/>);
       els.push(<g key={"o"+k}>{sq}</g>);}
     else if(tp==="hc")els.push(<path key={"o"+k} d={"M "+(o[2]-o[3])+" 10 a "+o[3]+" "+o[3]+" 0 0 0 "+(o[3]*2)+" 0 z"} fill={c}/>);
+    else if(tp==="hs"){els.push(<g key={"o"+k} fill={c}><path d="M5.5 4.5 q3 0.4 3.3 3.2 l-1.1 0 q-0.3 -1.9 -2.2 -2.1 z"/><rect x={5.6} y={3.2} width={0.9} height={5.2} transform="rotate(-32 6 6)"/><rect x={4.2} y={3.6} width={3.6} height={0.9} transform="rotate(52 6 4)"/></g>);els.push(<polygon key={"o"+k+"st"} points="6,2.2 6.4,3 7.3,3 6.6,3.6 6.9,4.4 6,3.9 5.1,4.4 5.4,3.6 4.7,3 5.6,3" fill={c}/>);}
   });
   return <svg viewBox="0 0 30 20" width={W} height={H} style={{verticalAlign:"-2px",border:"1px solid "+C.line2,background:"#fff"}}>{els}</svg>;
 }
@@ -739,7 +752,7 @@ export default function App(){
   // ALL/GFIX/MATRIZ/THIRD activos como variables globales mutables
   TID=tid;T=TOURNEYS[tid];
   ALL=DATA[tid].ALL;GFIX=DATA[tid].GFIX;MATRIZ=DATA[tid].MATRIZ;THIRD=DATA[tid].THIRD;
-  const [rosters,setRosters]=useState(()=>ALL.map(t=>t.p.map(p=>{const np=[...p];np[4]=natRating(np);return np;})));
+  const rosters=ALL.map(t=>t.p.map(p=>{const np=[...p];np[4]=natRating(np);return np;}));
   const [formation,setFormation]=useState("4-4-2");
   const [xi,setXi]=useState([]);
   const [slotSel,setSlotSel]=useState(null);
@@ -762,11 +775,11 @@ export default function App(){
   const isInj=(t,i)=>(injuries[t+"_"+i]||0)>0;
   const champKey=()=>"P"+BR().FINAL;
   const sfPids=()=>BR().SF.map(d=>d[0]);
+  const grpRounds=3;
+  const koBase=grpRounds; // primer indice KO
   const lastGroupIdx=koBase-1;
   const NS=T.stages.length;
   const stKey=T.stages[Math.min(stageIdx,NS-1)];
-  const grpRounds=3;
-  const koBase=grpRounds; // primer indice KO
   const isKO=stageIdx>=koBase;
 
   const standingsOf=(g,st)=>{
@@ -776,8 +789,8 @@ export default function App(){
   };
   const computeQual=st=>{
     const p1={},p2={},p3={};
-    LETTERS.forEach(g=>{const s=standingsOf(g,st);p1[g]=s[0].i;p2[g]=s[1].i;p3[g]=s[2].i;});
-    const thirds=LETTERS.map(g=>{const i=p3[g];const s=(st||gStats)[i];return {g,i,pts:s.pts,dg:s.gf-s.gc,gf:s.gf};})
+    GLETTERS().forEach(g=>{const s=standingsOf(g,st);p1[g]=s[0].i;p2[g]=s[1].i;p3[g]=s[2].i;});
+    const thirds=GLETTERS().map(g=>{const i=p3[g];const s=(st||gStats)[i];return {g,i,pts:s.pts,dg:s.gf-s.gc,gf:s.gf};})
       .sort((x,y)=>y.pts-x.pts||y.dg-x.dg||y.gf-x.gf);
     const qt=thirds.slice(0,T.bestThirds);
     const clave=qt.map(x=>x.g).sort().join("");
@@ -795,7 +808,7 @@ export default function App(){
   };
   const stageMatches=(si,q,res)=>{
     const R=res||results;const b=BR();
-    if(si<koBase)return LETTERS.flatMap(g=>[GFIX[g][si*2],GFIX[g][si*2+1]].map(([h,a])=>({pid:null,h,a,g})));
+    if(si<koBase)return GLETTERS().flatMap(g=>[GFIX[g][si*2],GFIX[g][si*2+1]].map(([h,a])=>({pid:null,h,a,g})));
     if(!q)return [];
     const ko=T.stages[si]; // "R32"|"R16"|"QF"|"SF"|"P3"|"F"
     const fromW=defs=>defs.map(([pid,x,y])=>({pid,h:R["P"+x]?R["P"+x].winner:null,a:R["P"+y]?R["P"+y].winner:null})).filter(m=>m.h!==null&&m.a!==null);
@@ -1005,13 +1018,12 @@ export default function App(){
       const r=await window.storage.get("wcm26");
       if(r&&r.value){
         const d=JSON.parse(r.value);
-        const ld=d.tid||"2026";setTid(ld);T=TOURNEYS[ld];TID=ld;
-        const dd=DATA[ld];ALL=dd.ALL;GFIX=dd.GFIX;MATRIZ=dd.MATRIZ;THIRD=dd.THIRD;
-        setRosters(ALL.map(t=>t.p.map(p=>{const np=[...p];np[4]=natRating(np);return np;})));
+        const ld=d.tid||"2026";setTid(ld);
+        const ldAll=DATA[ld].ALL;
         setMy(d.my);setStageIdx(d.stageIdx);setGStats(d.gStats);setResults(d.results);
         setQual(d.qual);setFormation(d.formation);setXi(d.xi);setMyFit(d.myFit);
         setInjuries(d.injuries||{});setScorers(d.scorers||{});setPstats(d.pstats||{});setLang(d.lang||"es");setTheme(d.theme||"dark");
-        setViewG(ALL[d.my].g);setScreen("menu");setMsg("");
+        setViewG(ldAll[d.my].g);setScreen("menu");setMsg("");
       } else setMsg(tr("noSave"));
     }catch(e){setMsg(tr("noSave"));}
   };
@@ -1065,9 +1077,7 @@ export default function App(){
     {Object.entries(TOURNEYS).map(([k,tt])=>{
       const done=false;
       return <div key={k} onClick={()=>{
-        setTid(k);T=tt;TID=k;
-        const d=DATA[k];ALL=d.ALL;GFIX=d.GFIX;MATRIZ=d.MATRIZ;THIRD=d.THIRD;
-        setRosters(ALL.map(t=>t.p.map(p=>{const np=[...p];np[4]=natRating(np);return np;})));
+        setTid(k);
         setScreen("select");
       }} style={{padding:"14px 16px",cursor:"pointer",borderBottom:"2px solid "+C.line,background:C.panel}}>
         <div style={{fontSize:18,fontWeight:"bold",color:tt.accent}}>{tt.name}</div>
@@ -1079,7 +1089,7 @@ export default function App(){
   </div>);
   if(screen==="select")return wrap(<div>
     <Bar t={tr("pick")}/>
-    {LETTERS.map(g=><div key={g}>
+    {GLETTERS().map(g=><div key={g}>
       <div style={{padding:"5px 12px",fontSize:12,color:C.cyan,fontWeight:"bold",borderBottom:"2px solid "+C.line}}>{tr("group")} {g}</div>
       {ALL.map((t,i)=>t.g===g&&(()=>{
         const r=Math.round(avg(bestXI(i,"4-4-2",rosters).map(e=>rosters[i][e.idx][4])));
@@ -1173,7 +1183,7 @@ export default function App(){
     return wrap(<div>
       <Bar t={tr("groups")}/>
       <div style={{display:"flex",flexWrap:"wrap"}}>
-        {LETTERS.map(g=><div key={g} onClick={()=>setViewG(g)} style={{flex:1,minWidth:40,textAlign:"center",padding:"6px 0",cursor:"pointer",fontSize:12,fontWeight:"bold",background:viewG===g?C.gry:C.panel,color:viewG===g?"#000":C.yel}}>{g}</div>)}
+        {GLETTERS().map(g=><div key={g} onClick={()=>setViewG(g)} style={{flex:1,minWidth:40,textAlign:"center",padding:"6px 0",cursor:"pointer",fontSize:12,fontWeight:"bold",background:viewG===g?C.gry:C.panel,color:viewG===g?"#000":C.yel}}>{g}</div>)}
       </div>
       <div style={{padding:"5px 8px",fontSize:11,color:C.gry,display:"flex"}}>
         <span style={{width:24}}>#</span><span style={{flex:1}}>{tr("nation")}</span>
@@ -1339,7 +1349,7 @@ export default function App(){
     return wrap(<div>
       <Bar t={tr("results")+" - "+(prevIdx>=0&&prevIdx<NS?tr("stages")[prevIdx]:"")}/>
       <div style={{maxHeight:400,overflowY:"auto"}}>
-      {prevIdx<koBase?LETTERS.map(g=>{
+      {prevIdx<koBase?GLETTERS().map(g=>{
         return <div key={g}>
           <div style={{padding:"3px 10px",fontSize:10,color:C.cyan}}>{tr("group")} {g}</div>
           {standingsOf(g).slice(0,4).map((s,p)=><div key={s.i} style={{padding:"2px 10px",fontSize:12,display:"flex",background:s.i===my?C.myRow:"transparent"}}>
