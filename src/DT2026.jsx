@@ -58,20 +58,20 @@ es:{newGame:"NUEVA PARTIDA",load:"CARGAR PARTIDA",pick:"Elegir seleccion",nation
  elim:"Tu seleccion quedo eliminada. Podes seguir el torneo.",play:"JUGAR PARTIDO",simRound:"SIMULAR RONDA",
  squad:"PLANTEL (26)",tactics:"TACTICA Y ALINEACION",groups:"GRUPOS Y TERCEROS",bracket:"CUADRO FINAL",scorers:"GOLEADORES",stats:"ESTADISTICAS",topAssist:"ASISTENCIAS",topRated:"MEJOR PROMEDIO",topG:"GOLEADORES",noStats:"Jugá partidos para ver estadísticas.",colG:"G",colA:"A",colPJ:"PJ",colAvg:"NOTA",
  save:"GUARDAR PARTIDA",exit:"SALIR AL MENU",back:"VOLVER",cont:"CONTINUAR",resume:"REANUDAR PARTIDO",pause:"PAUSA / CAMBIOS",
- instant:"RESULTADO INSTANTANEO",injured:"LESIONADOS",champ:"CAMPEON DEL MUNDO",congrats:"\u00a1\u00a1FELICITACIONES, DT!! \u00a1GLORIA ETERNA!",
- finished:"TORNEO FINALIZADO",pos:"POS",player:"JUGADOR",age:"EDAD",fit:"FIS",val:"VAL",rt:"NOTA",eff:"EF",diamond:"ROMBO",years:"a\u00f1os",card:"Ficha",
+ instant:"RESULTADO INSTANTANEO",injured:"LESIONADOS",champ:"CAMPEON DEL MUNDO",congrats:"¡¡FELICITACIONES, DT!! ¡GLORIA ETERNA!",
+ finished:"TORNEO FINALIZADO",pos:"POS",player:"JUGADOR",age:"EDAD",fit:"FIS",val:"VAL",rt:"NOTA",eff:"EF",diamond:"ROMBO",years:"años",card:"Ficha",
  starters:"TITULARES (toca un puesto y luego un suplente)",bench:"SUPLENTES",chooseFor:"elegir para",
  subs:"CAMBIOS (quedan",subsWho:"toca quien sale",subsIn:"elegi quien entra",form:"FORMACION",
  ratings:"PUNTUACIONES",motm:"FIGURA",subbed:"(sustituido)",att:"espectadores",thirds:"RANKING DE TERCEROS",
  qualifies:"CLASIFICA",out:"ELIMINADO",note3:"Celeste: clasifica directo | Amarillo: tercero (8 mejores pasan)",
- r32:"16AVOS DE FINAL",r16:"OCTAVOS",qf:"CUARTOS",sf:"SEMIFINALES",p3:"3ER PUESTO",final:"GRAN FINAL (MetLife, 19 jul)",
+ r32:"RONDA 1",r16:"RONDA 2",qf:"RONDA 3",sf:"SEMIFINAL",p3:"3ER PUESTO",round:"RONDA",final:"GRAN FINAL (MetLife, 19 jul)",
  tbd:"por definir",results:"Resultados",noGoals:"Todavia no se anotaron goles.",saved:"PARTIDA GUARDADA OK",
  saveErr:"ERROR AL GUARDAR",noSave:"NO HAY PARTIDA GUARDADA",final0:"FINAL",pens0:"PENALES",min:"MINUTO",pause0:"PAUSA",
- poss:"POSESION",shots:"TIROS",onT:"AL ARCO",yel0:"AMARILLAS",red0:"ROJAS",inj0:"LESIONES",dark:"OSCURO",light:"CLARO",ment:"MENTALIDAD",mDef:"DEFENSIVA",mBal:"EQUILIBRADA",mOfe:"OFENSIVA",
+ poss:"POSESION",shots:"TIROS",onT:"AL ARCO",yel0:"AMARILLAS",red0:"ROJAS",inj0:"LESIONES",dark:"OSCURO",light:"CLARO",ment:"MENTALIDAD",move:"REUBICAR",moveHelp:"Tocá un titular y luego su nueva posición",movePos:"NUEVA POSICION",mDef:"DEFENSIVA",mBal:"EQUILIBRADA",mOfe:"OFENSIVA",
  sub1:"Cambio en",sub2:"sale",sub3:"entra",redCard:"(ROJA)",les:"LES",
- t1:"DT 2026",t2:"DIRECTOR TECNICO \u2014 NORTEAMERICA 2026",t3:"* homenaje al CM 93/94 *",donate:"INVITAME UN CAFECITO \u2615",donateMsg:"\u00bfTe gusto DT 2026? Apoya el proyecto",
+ t1:"DT 2026",t2:"DIRECTOR TECNICO — NORTEAMERICA 2026",t3:"* homenaje al CM 93/94 *",donate:"INVITAME UN CAFECITO ☕",donateMsg:"¿Te gusto DT 2026? Apoya el proyecto",
  t4:"48 SELECCIONES - GRUPOS REALES<br/>PLANTELES REALES 2026",
- stages:["FECHA 1 (11-17 jun)","FECHA 2 (18-23 jun)","FECHA 3 (24-27 jun)","16AVOS (28 jun - 3 jul)","OCTAVOS (4-7 jul)","CUARTOS (9-11 jul)","SEMIFINALES (14-15 jul)","3ER PUESTO (18 jul)","GRAN FINAL (19 jul)"],
+ stages:["FECHA 1","FECHA 2","FECHA 3","RONDA 1","RONDA 2","RONDA 3","SEMIFINAL","3ER PUESTO","GRAN FINAL"],
  attr:["Velocidad","Fuerza","Agilidad","Disparos","Marcaje","Cabezazos","Tecnica","Reflejos","Agresividad","Decisiones","Liderazgo","Resistencia"],
  attrGK:["Agilidad","Juego aereo","Vel. salida","Distribucion","Posicionam.","Saque largo","Juego pies","Reflejos","Mando area","Decisiones","Liderazgo","Atajadas"]},
 en:{newGame:"NEW GAME",load:"LOAD GAME",pick:"Choose your nation",nation:"NATION",group:"GROUP",stage:"STAGE",next:"NEXT",
@@ -84,14 +84,14 @@ en:{newGame:"NEW GAME",load:"LOAD GAME",pick:"Choose your nation",nation:"NATION
  subs:"SUBS (left:",subsWho:"tap who comes off",subsIn:"pick who comes on",form:"FORMATION",
  ratings:"MATCH RATINGS",motm:"MOTM",subbed:"(subbed off)",att:"attendance",thirds:"3RD-PLACE RANKING",
  qualifies:"THROUGH",out:"OUT",note3:"Cyan: direct qualification | Yellow: third place (best 8 advance)",
- r32:"ROUND OF 32",r16:"ROUND OF 16",qf:"QUARTER-FINALS",sf:"SEMI-FINALS",p3:"3RD PLACE",final:"GRAND FINAL (MetLife, Jul 19)",
+ r32:"ROUND 1",r16:"ROUND 2",qf:"ROUND 3",sf:"SEMI-FINAL",p3:"3RD PLACE",round:"ROUND",final:"GRAND FINAL (MetLife, Jul 19)",
  tbd:"to be decided",results:"Results",noGoals:"No goals scored yet.",saved:"GAME SAVED OK",
  saveErr:"SAVE ERROR",noSave:"NO SAVED GAME",final0:"FULL TIME",pens0:"PENALTIES",min:"MINUTE",pause0:"PAUSED",
- poss:"POSSESSION",shots:"SHOTS",onT:"ON TARGET",yel0:"YELLOWS",red0:"REDS",inj0:"INJURIES",dark:"DARK",light:"LIGHT",ment:"MENTALITY",mDef:"DEFENSIVE",mBal:"BALANCED",mOfe:"ATTACKING",
+ poss:"POSSESSION",shots:"SHOTS",onT:"ON TARGET",yel0:"YELLOWS",red0:"REDS",inj0:"INJURIES",dark:"DARK",light:"LIGHT",ment:"MENTALITY",move:"REPOSITION",moveHelp:"Tap a starter, then their new position",movePos:"NEW POSITION",mDef:"DEFENSIVE",mBal:"BALANCED",mOfe:"ATTACKING",
  sub1:"Substitution",sub2:"off",sub3:"on",redCard:"(RED)",les:"INJ",
- t1:"DT 2026",t2:"THE GAFFER \u2014 NORTH AMERICA 2026",t3:"* a CM 93/94 tribute *",donate:"BUY ME A COFFEE \u2615",donateMsg:"Enjoyed DT 2026? Support the project",
+ t1:"DT 2026",t2:"THE GAFFER — NORTH AMERICA 2026",t3:"* a CM 93/94 tribute *",donate:"BUY ME A COFFEE ☕",donateMsg:"Enjoyed DT 2026? Support the project",
  t4:"48 NATIONS - REAL GROUPS<br/>REAL 2026 SQUADS",
- stages:["MATCHDAY 1 (Jun 11-17)","MATCHDAY 2 (Jun 18-23)","MATCHDAY 3 (Jun 24-27)","ROUND OF 32 (Jun 28 - Jul 3)","ROUND OF 16 (Jul 4-7)","QUARTER-FINALS (Jul 9-11)","SEMI-FINALS (Jul 14-15)","3RD PLACE (Jul 18)","GRAND FINAL (Jul 19)"],
+ stages:["MATCHDAY 1","MATCHDAY 2","MATCHDAY 3","ROUND 1","ROUND 2","ROUND 3","SEMI-FINAL","3RD PLACE","GRAND FINAL"],
  attr:["Pace","Strength","Agility","Shooting","Marking","Heading","Technique","Reflexes","Aggression","Decisions","Leadership","Stamina"],
  attrGK:["Agility","Aerial","Rushing out","Distribution","Positioning","Long kicks","Footwork","Reflexes","Command","Decisions","Leadership","Shot stopping"]},
 pt:{newGame:"NOVO JOGO",load:"CARREGAR JOGO",pick:"Escolha sua selecao",nation:"SELECAO",group:"GRUPO",stage:"FASE",next:"PROXIMO",
@@ -104,14 +104,14 @@ pt:{newGame:"NOVO JOGO",load:"CARREGAR JOGO",pick:"Escolha sua selecao",nation:"
  subs:"SUBSTITUICOES (restam",subsWho:"toque quem sai",subsIn:"escolha quem entra",form:"FORMACAO",
  ratings:"NOTAS DA PARTIDA",motm:"CRAQUE",subbed:"(substituido)",att:"torcedores",thirds:"RANKING DE TERCEIROS",
  qualifies:"CLASSIFICA",out:"ELIMINADO",note3:"Ciano: classifica direto | Amarelo: terceiro (8 melhores avancam)",
- r32:"16 AVOS DE FINAL",r16:"OITAVAS",qf:"QUARTAS",sf:"SEMIFINAIS",p3:"3o LUGAR",final:"GRANDE FINAL (MetLife, 19 jul)",
+ r32:"RODADA 1",r16:"RODADA 2",qf:"RODADA 3",sf:"SEMIFINAL",p3:"3o LUGAR",round:"RODADA",final:"GRANDE FINAL (MetLife, 19 jul)",
  tbd:"a definir",results:"Resultados",noGoals:"Nenhum gol marcado ainda.",saved:"JOGO SALVO OK",
  saveErr:"ERRO AO SALVAR",noSave:"NENHUM JOGO SALVO",final0:"FIM DE JOGO",pens0:"PENALTIS",min:"MINUTO",pause0:"PAUSA",
- poss:"POSSE",shots:"FINALIZACOES",onT:"NO GOL",yel0:"AMARELOS",red0:"VERMELHOS",inj0:"LESOES",dark:"ESCURO",light:"CLARO",ment:"MENTALIDADE",mDef:"DEFENSIVA",mBal:"EQUILIBRADA",mOfe:"OFENSIVA",
+ poss:"POSSE",shots:"FINALIZACOES",onT:"NO GOL",yel0:"AMARELOS",red0:"VERMELHOS",inj0:"LESOES",dark:"ESCURO",light:"CLARO",ment:"MENTALIDADE",move:"REPOSICIONAR",moveHelp:"Toque um titular e depois a nova posicao",movePos:"NOVA POSICAO",mDef:"DEFENSIVA",mBal:"EQUILIBRADA",mOfe:"OFENSIVA",
  sub1:"Substituicao no",sub2:"sai",sub3:"entra",redCard:"(VERMELHO)",les:"LES",
- t1:"DT 2026",t2:"DIRETOR TECNICO \u2014 AMERICA DO NORTE 2026",t3:"* homenagem ao CM 93/94 *",donate:"ME PAGUE UM CAFE \u2615",donateMsg:"Gostou do DT 2026? Apoie o projeto",
+ t1:"DT 2026",t2:"DIRETOR TECNICO — AMERICA DO NORTE 2026",t3:"* homenagem ao CM 93/94 *",donate:"ME PAGUE UM CAFE ☕",donateMsg:"Gostou do DT 2026? Apoie o projeto",
  t4:"48 SELECOES - GRUPOS REAIS<br/>ELENCOS REAIS 2026",
- stages:["RODADA 1 (11-17 jun)","RODADA 2 (18-23 jun)","RODADA 3 (24-27 jun)","16 AVOS (28 jun - 3 jul)","OITAVAS (4-7 jul)","QUARTAS (9-11 jul)","SEMIFINAIS (14-15 jul)","3o LUGAR (18 jul)","GRANDE FINAL (19 jul)"],
+ stages:["RODADA 1","RODADA 2","RODADA 3","FASE 1","FASE 2","FASE 3","SEMIFINAL","3o LUGAR","GRANDE FINAL"],
  attr:["Velocidade","Forca","Agilidade","Finalizacao","Marcacao","Cabeceio","Tecnica","Reflexos","Agressividade","Decisoes","Lideranca","Resistencia"],
  attrGK:["Agilidade","Jogo aereo","Saida do gol","Distribuicao","Posicionam.","Reposicao longa","Jogo de pes","Reflexos","Comando da area","Decisoes","Lideranca","Defesas"]}
 };
@@ -124,34 +124,34 @@ const tnOf=i=>LANG==="es"?ALL[i].n:(TN[LANG][ALL[i].s]||ALL[i].n);
 // Plantillas de relato del partido
 const LT={
 es:{sub:(t,o,i)=>"Cambio en "+t+": sale "+o+", entra "+i,
- goal:(n,t,a,h,g)=>"\u00a1\u00a1GOL!! "+n+" ("+t+")"+a+" \u2014 "+h+"-"+g, assist:"asiste",
- save:(n,t)=>"\u00a1Atajadon! Remate de "+n+" ("+t+")", wide:(n,t)=>n+" ("+t+") remata desviado",
- red:(n,t)=>"\u00a1\u00a1ROJA!! Segunda amarilla para "+n+" ("+t+")", yellow:(n,t)=>"Amarilla para "+n+" ("+t+")",
- inj:(n,t,w)=>"\u00a1LESION! "+n+" ("+t+") no puede seguir ("+w+" part.)", injPause:"LESION \u2014 hace un cambio o continua con uno menos",
+ goal:(n,t,a,h,g)=>"¡¡GOL!! "+n+" ("+t+")"+a+"  ["+h+"-"+g+"]", assist:"asiste",
+ save:(n,t)=>"¡Atajadon! Remate de "+n+" ("+t+")", wide:(n,t)=>n+" ("+t+") remata desviado",
+ red:(n,t)=>"¡¡ROJA!! Segunda amarilla para "+n+" ("+t+")", yellow:(n,t)=>"Amarilla para "+n+" ("+t+")",
+ inj:(n,t,w)=>"¡LESION! "+n+" ("+t+") no puede seguir ("+w+" part.)", injPause:"LESION — hace un cambio o continua con uno menos",
  ht:(h,a,b,c)=>"45' === DESCANSO === "+h+" "+a+"-"+b+" "+c, htPause:"ENTRETIEMPO",
- etPause:"ALARGUE \u2014 30 min mas (+1 cambio)", ft:(l,h,a,b,c)=>l+"' === FINAL === "+h+" "+a+"-"+b+" "+c,
- et:"90' FIN DE LOS 90 \u2014 \u00a1VAMOS AL ALARGUE!", pensStart:"120' Empate. \u00a1DEFINICION POR PENALES!",
- penG:"CONVIERTE", penS:"\u2014 \u00a1ATAJA EL ARQUERO!", penW:"\u2014 lo tira afuera",
+ etPause:"ALARGUE — 30 min mas (+1 cambio)", ft:(l,h,a,b,c)=>l+"' === FINAL === "+h+" "+a+"-"+b+" "+c,
+ et:"90' FIN DE LOS 90 — ¡VAMOS AL ALARGUE!", pensStart:"120' Empate. ¡DEFINICION POR PENALES!",
+ penG:"CONVIERTE", penS:"— ¡ATAJA EL ARQUERO!", penW:"— lo tira afuera",
  penRes:(h,x,y,a)=>"PENALES: "+h+" "+x+" - "+y+" "+a, adv:n=>"=== AVANZA "+n+" ==="},
 en:{sub:(t,o,i)=>"Substitution, "+t+": "+o+" off, "+i+" on",
- goal:(n,t,a,h,g)=>"GOAL!! "+n+" ("+t+")"+a+" \u2014 "+h+"-"+g, assist:"assist by",
+ goal:(n,t,a,h,g)=>"GOAL!! "+n+" ("+t+")"+a+"  ["+h+"-"+g+"]", assist:"assist by",
  save:(n,t)=>"What a save! Shot by "+n+" ("+t+")", wide:(n,t)=>n+" ("+t+") fires wide",
  red:(n,t)=>"RED CARD!! Second yellow for "+n+" ("+t+")", yellow:(n,t)=>"Yellow card for "+n+" ("+t+")",
- inj:(n,t,w)=>"INJURY! "+n+" ("+t+") cannot continue ("+w+" matches)", injPause:"INJURY \u2014 make a sub or play a man down",
+ inj:(n,t,w)=>"INJURY! "+n+" ("+t+") cannot continue ("+w+" matches)", injPause:"INJURY — make a sub or play a man down",
  ht:(h,a,b,c)=>"45' === HALF TIME === "+h+" "+a+"-"+b+" "+c, htPause:"HALF TIME",
- etPause:"EXTRA TIME \u2014 30 more mins (+1 sub)", ft:(l,h,a,b,c)=>l+"' === FULL TIME === "+h+" "+a+"-"+b+" "+c,
- et:"90' END OF 90 \u2014 EXTRA TIME!", pensStart:"120' Still level. PENALTY SHOOTOUT!",
- penG:"SCORES", penS:"\u2014 SAVED BY THE KEEPER!", penW:"\u2014 misses wide",
+ etPause:"EXTRA TIME — 30 more mins (+1 sub)", ft:(l,h,a,b,c)=>l+"' === FULL TIME === "+h+" "+a+"-"+b+" "+c,
+ et:"90' END OF 90 — EXTRA TIME!", pensStart:"120' Still level. PENALTY SHOOTOUT!",
+ penG:"SCORES", penS:"— SAVED BY THE KEEPER!", penW:"— misses wide",
  penRes:(h,x,y,a)=>"PENALTIES: "+h+" "+x+" - "+y+" "+a, adv:n=>"=== "+n+" ADVANCES ==="},
 pt:{sub:(t,o,i)=>"Substituicao no "+t+": sai "+o+", entra "+i,
- goal:(n,t,a,h,g)=>"GOOOL!! "+n+" ("+t+")"+a+" \u2014 "+h+"-"+g, assist:"assistencia de",
+ goal:(n,t,a,h,g)=>"GOOOL!! "+n+" ("+t+")"+a+"  ["+h+"-"+g+"]", assist:"assistencia de",
  save:(n,t)=>"Que defesa! Chute de "+n+" ("+t+")", wide:(n,t)=>n+" ("+t+") chuta para fora",
  red:(n,t)=>"VERMELHO!! Segundo amarelo para "+n+" ("+t+")", yellow:(n,t)=>"Amarelo para "+n+" ("+t+")",
- inj:(n,t,w)=>"LESAO! "+n+" ("+t+") nao pode continuar ("+w+" jogos)", injPause:"LESAO \u2014 faca uma troca ou siga com um a menos",
+ inj:(n,t,w)=>"LESAO! "+n+" ("+t+") nao pode continuar ("+w+" jogos)", injPause:"LESAO — faca uma troca ou siga com um a menos",
  ht:(h,a,b,c)=>"45' === INTERVALO === "+h+" "+a+"-"+b+" "+c, htPause:"INTERVALO",
- etPause:"PRORROGACAO \u2014 mais 30 min (+1 troca)", ft:(l,h,a,b,c)=>l+"' === FIM DE JOGO === "+h+" "+a+"-"+b+" "+c,
- et:"90' FIM DOS 90 \u2014 PRORROGACAO!", pensStart:"120' Empate. DISPUTA DE PENALTIS!",
- penG:"CONVERTE", penS:"\u2014 DEFENDE O GOLEIRO!", penW:"\u2014 chuta para fora",
+ etPause:"PRORROGACAO — mais 30 min (+1 troca)", ft:(l,h,a,b,c)=>l+"' === FIM DE JOGO === "+h+" "+a+"-"+b+" "+c,
+ et:"90' FIM DOS 90 — PRORROGACAO!", pensStart:"120' Empate. DISPUTA DE PENALTIS!",
+ penG:"CONVERTE", penS:"— DEFENDE O GOLEIRO!", penW:"— chuta para fora",
  penRes:(h,x,y,a)=>"PENALTIS: "+h+" "+x+" - "+y+" "+a, adv:n=>"=== AVANCA "+n+" ==="}
 };
 
@@ -343,7 +343,7 @@ function evolveAll(R,myIdx,xiMine,scorers){
         if(d!==0){
           const nv=clampA(np[5+k]+d,1,20);
           if(nv!==np[5+k]){
-            if(t===myIdx)news.push(p[0]+": "+ATTR_KEYS[k]+" "+np[5+k]+(d>0?" \u2191":" \u2193")+nv);
+            if(t===myIdx)news.push(p[0]+": "+ATTR_KEYS[k]+" "+np[5+k]+(d>0?" ↑":" ↓")+nv);
             np[5+k]=nv;
           }
         }
@@ -510,6 +510,7 @@ function stepMinute(M,myIdx,auto){
         const yel=side==="H"?M.yelCardsH:M.yelCardsA;
         if(yel[key]){
           M.red[ix]++;v.e.off=true;v.e.red=true;
+          if(M.redCards)M.redCards.push({t,idx:v.e.idx});
           bumpR(M,side,v.si,-1.5);
           M.log.push(m+"' "+LT[LANG].red(M.R[t][key][0],ALL[t].s));
         } else {
@@ -594,7 +595,7 @@ function runShootout(M){
     const ref=gkRef(side);
     const pG=Math.max(0.55,Math.min(0.94,0.78+(p[8]-ref)*0.012+(Math.random()-0.5)*0.06));
     const goal=Math.random()<pG;
-    M.log.push((goal?"\u2714 ":"\u2716 ")+p[0]+" ("+ALL[side==="H"?M.h:M.a].s+") "+(goal?LT[LANG].penG:Math.random()<0.65?LT[LANG].penS:LT[LANG].penW));
+    M.log.push((goal?"✔ ":"✖ ")+p[0]+" ("+ALL[side==="H"?M.h:M.a].s+") "+(goal?LT[LANG].penG:Math.random()<0.65?LT[LANG].penS:LT[LANG].penW));
     return goal;
   };
   while(true){
@@ -638,7 +639,7 @@ function simKO(h,a,R,inj){
 // ============ ESTRUCTURA DEL TORNEO ============
 const VENUES_90=[["Stadio Olimpico",73603,"Roma"],["San Siro",85700,"Milan"],["Stadio San Paolo",72810,"Napoles"],["Stadio Delle Alpi",69041,"Turin"],["Stadio Marc'Antonio Bentegodi",42160,"Verona"],["Stadio Luigi Ferraris",44423,"Genova"],["Stadio San Nicola",58270,"Bari"],["Stadio Renato Dall'Ara",38279,"Bolonia"],["Stadio Artemio Franchi",47282,"Florencia"],["Stadio Sant'Elia",39457,"Cagliari"],["Stadio La Favorita",37619,"Palermo"],["Stadio Friuli",41705,"Udine"]];
 const VENUES_86=[["Estadio Azteca",114600,"Ciudad de Mexico"],["Estadio Jalisco",66193,"Guadalajara"],["Estadio Cuauhtemoc",42648,"Puebla"],["Estadio Universitario",42000,"Monterrey"],["Estadio Tecnologico",33805,"Monterrey"],["Estadio Nou Camp",30000,"Leon"],["Estadio Corregidora",38576,"Queretaro"],["Estadio La Corregidora",30000,"Toluca"],["Estadio Tres de Marzo",30015,"Zapopan"],["Estadio Sergio Leon Chavez",24000,"Irapuato"],["Estadio Neza 86",30000,"Nezahualcoyotl"],["Estadio Olimpico",72000,"Ciudad de Mexico"]];
-const VENUES_26=[["Estadio Azteca",87523,"Ciudad de Mexico"],["MetLife Stadium",82500,"Nueva York"],["AT&T Stadium",80000,"Dallas"],["Arrowhead Stadium",76416,"Kansas City"],["NRG Stadium",72220,"Houston"],["Mercedes-Benz Stadium",71000,"Atlanta"],["SoFi Stadium",70240,"Los Angeles"],["Lumen Field",69000,"Seattle"],["Levi's Stadium",68500,"San Francisco"],["Lincoln Financial Field",67594,"Filadelfia"],["Hard Rock Stadium",64767,"Miami"],["Gillette Stadium",64628,"Boston"],["Estadio BBVA",53500,"Monterrey"],["BC Place",54500,"Vancouver"],["Estadio Akron",46232,"Guadalajara"],["BMO Field",45736,"Toronto"]];
+const VENUES_26=[["Estadio Azteca",87523,"Ciudad de Mexico"],["MetLife Stadium",82500,"Nueva Jersey"],["AT&T Stadium",80000,"Dallas"],["Arrowhead Stadium",76416,"Kansas City"],["NRG Stadium",72220,"Houston"],["Mercedes-Benz Stadium",71000,"Atlanta"],["SoFi Stadium",70240,"Los Angeles"],["Lumen Field",69000,"Seattle"],["Levi's Stadium",68500,"San Francisco"],["Lincoln Financial Field",67594,"Filadelfia"],["Hard Rock Stadium",64767,"Miami"],["Gillette Stadium",64628,"Boston"],["Estadio BBVA",53500,"Monterrey"],["BC Place",54500,"Vancouver"],["Estadio Akron",46232,"Guadalajara"],["BMO Field",45736,"Toronto"]];
 const VENUES=VENUES_26;
 const STAGES=[["G1","FECHA 1 (11-17 jun)"],["G2","FECHA 2 (18-23 jun)"],["G3","FECHA 3 (24-27 jun)"],["R32","16AVOS (28 jun - 3 jul)"],["R16","OCTAVOS (4-7 jul)"],["QF","CUARTOS (9-11 jul)"],["SF","SEMIFINALES (14-15 jul)"],["P3","3ER PUESTO (18 jul)"],["F","GRAN FINAL (19 jul)"]];
 const ALL_LETTERS=["A","B","C","D","E","F","G","H","I","J","K","L"];
@@ -720,6 +721,7 @@ IRL:{t:"V",c:["#169b62","#fff","#ff883e"]},
 DEN:{t:"H",c:["#c60c30"],o:[["nc","#fff"]]},
 BUL:{t:"H",c:["#fff","#00966e","#d62612"]},
 POL:{t:"H",c:["#fff","#dc143c"]},
+HUN:{t:"H",c:["#ce2939","#fff","#477050"]},
 NIR:{t:"H",c:["#fff"],o:[["fc","#c8102e"],["ul",""]]}
 };
 function Flag({i,s}){
@@ -742,7 +744,7 @@ function Flag({i,s}){
     const tp=o[0],c=o[1];
     if(tp==="ci")els.push(<circle key={"o"+k} cx={o[2]} cy={o[4]!==undefined?o[4]:10} r={o[3]} fill={c}/>);
     else if(tp==="st"){const cx=o[2],sz=o[3],cy=o[4]!==undefined?o[4]:10;
-      els.push(<text key={"o"+k} x={cx} y={cy+sz*0.36} textAnchor="middle" fontSize={sz} fill={c}>{"\u2605"}</text>);}
+      els.push(<text key={"o"+k} x={cx} y={cy+sz*0.36} textAnchor="middle" fontSize={sz} fill={c}>{"★"}</text>);}
     else if(tp==="cr")els.push(<g key={"o"+k}><circle cx={o[3]} cy={o[4]} r={o[5]} fill={c}/><circle cx={o[3]+o[5]*0.5} cy={o[4]} r={o[5]*0.85} fill={o[2]}/></g>);
     else if(tp==="pc")els.push(<g key={"o"+k}><rect x={12.6} y={4} width={4.8} height={12} fill={c}/><rect x={9} y={7.6} width={12} height={4.8} fill={c}/></g>);
     else if(tp==="fc")els.push(<g key={"o"+k}><rect x={12.8} y={0} width={4.4} height={20} fill={c}/><rect x={0} y={7.8} width={30} height={4.4} fill={c}/></g>);
@@ -779,7 +781,7 @@ const fitColor=f=>f>=75?C.grn:f>=50?C.yel:C.red;
 const rtColor=r=>r>=7.5?C.cyan:r>=6.5?C.grn:r>=5.5?C.wht:r>=4.5?C.yel:C.red;
 const disp=n=>n;
 const hasAny=(l,ws)=>ws.some(w=>l.includes(w));
-const logColor=l=>hasAny(l,["GOL","GOAL","AVANZA","ADVANCES","AVANCA"])?C.yel:hasAny(l,["===","PENAL","ALARGUE","EXTRA TIME","PRORROGACAO"])?C.cyan:hasAny(l,["LESION","INJURY","LESAO","ROJA","RED CARD","VERMELHO","\u2716"])?C.red:hasAny(l,["Cambio","Substitu","Troca","\u2714"])?C.grn:C.wht;
+const logColor=l=>hasAny(l,["GOL","GOAL","AVANZA","ADVANCES","AVANCA"])?C.yel:hasAny(l,["===","PENAL","ALARGUE","EXTRA TIME","PRORROGACAO"])?C.cyan:hasAny(l,["LESION","INJURY","LESAO","ROJA","RED CARD","VERMELHO","✖"])?C.red:hasAny(l,["Cambio","Substitu","Troca","✔"])?C.grn:C.wht;
 const fmtNum=n=>(n+"").replace(/\B(?=(\d{3})+(?!\d))/g,".");
 
 // ============ APP ============
@@ -803,6 +805,8 @@ export default function App(){
   const [xi,setXi]=useState([]);
   const [slotSel,setSlotSel]=useState(null);
   const [mentality,setMentality]=useState("bal");
+  const [moveMode,setMoveMode]=useState(false);
+  const [moveSel,setMoveSel]=useState(null);
   const [myFit,setMyFit]=useState([]);
   const [injuries,setInjuries]=useState({});
   const [scorers,setScorers]=useState({});
@@ -826,6 +830,19 @@ export default function App(){
   const koBase=grpRounds; // primer indice KO
   const lastGroupIdx=koBase-1;
   const NS=T.stages.length;
+  const KOLABEL={R32:"r32",R16:"r16",QF:"qf",SF:"sf",P3:"p3",F:"final"};
+  const stageLabel=(idx)=>{
+    if(idx<0||idx>=NS)return tr("finished");
+    const k=T.stages[idx];
+    if(k==="G1"||k==="G2"||k==="G3"){const gi=+k[1];return tr("stages")[gi-1];}
+    // KO: numerar las rondas previas a semis como RONDA 1,2,3...
+    const koSeq=T.stages.filter(x=>["R32","R16","QF"].includes(x));
+    if(["R32","R16","QF"].includes(k)){const n=koSeq.indexOf(k)+1;return tr("round")+" "+n;}
+    if(k==="SF")return tr("sf");
+    if(k==="P3")return tr("p3");
+    if(k==="F")return tr("final");
+    return k;
+  };
   const stKey=T.stages[Math.min(stageIdx,NS-1)];
   const isKO=stageIdx>=koBase;
 
@@ -920,8 +937,18 @@ export default function App(){
     const xiA=(a===my?curXi:bestXI(a,"4-4-2",rosters,injuries)).map(e=>({...e}));
     const inXH=new Set(xiH.map(e=>e.idx)), inXA=new Set(xiA.map(e=>e.idx));
     const VEN=TID==="1986"?VENUES_86:(TID==="1990"?VENUES_90:VENUES_26);
-    const finalV=TID==="2026"?VEN[1]:VEN[0];
-    const ven=stKey==="F"?finalV:VEN[Math.floor(Math.random()*VEN.length)];
+    // Estadios historicos reales: apertura y final por torneo
+    const OPEN_FINAL={
+      "1986":{open:VEN.find(v=>v[0]==="Estadio Azteca"),final:VEN.find(v=>v[0]==="Estadio Azteca")},
+      "1990":{open:VEN.find(v=>v[0]==="San Siro"),final:VEN.find(v=>v[0]==="Stadio Olimpico")},
+      "2026":{open:VEN.find(v=>v[0]==="Estadio Azteca")||VEN[0],final:VEN.find(v=>v[2]&&v[2].includes("Jersey"))||VEN[1]}
+    };
+    const of=OPEN_FINAL[TID]||{open:VEN[0],final:VEN[0]};
+    // partido inaugural real por torneo: Mexico86=BUL-ITA(A), Italia90=CMR-ARG(B), 2026=grupo A
+    const OPEN_GRP={"1986":"A","1990":"B","2026":"A"};
+    const og=OPEN_GRP[TID]||"A";
+    const isOpening=stageIdx===0&&mine.g===og&&GFIX[og]&&GFIX[og][0][0]===h&&GFIX[og][0][1]===a;
+    const ven=stKey==="F"?of.final:(isOpening&&of.open?of.open:VEN[Math.floor(Math.random()*VEN.length)]);
     const att=Math.round(ven[1]*(0.92+Math.random()*0.07));
     const M={h,a,R:rosters,xiH,xiA,knockout:isKO,pid:mine.pid,
       fitH:xiH.map(e=>h===my?myFit[e.idx]:100),
@@ -933,8 +960,8 @@ export default function App(){
       aiBaseH:"bal",aiBaseA:"bal",
       ratH:xiH.map(()=>6),ratA:xiA.map(()=>6),assH:[],assA:[],exits:[],
       shots:[0,0],onT:[0,0],yel:[0,0],red:[0,0],inj:[0,0],sH:[],sA:[],
-      log:[fmtNum(att)+" \u2014 "+ven[0]+" ("+ven[2]+")"],
-      newInjuries:[],userFitOut:{},paused:false,done:false,att,ven};
+      log:[fmtNum(att)+" — "+ven[0]+" ("+ven[2]+")"],
+      newInjuries:[],redCards:[],userFitOut:{},paused:false,done:false,att,ven};
     MR.current=M;
     pendRef.current={mine};
     setScreen("match");setSlotSel(null);
@@ -946,6 +973,36 @@ export default function App(){
     },110);
   };
   const userSide=()=>MR.current&&(MR.current.h===my?"H":"A");
+  const FIELD_POS=["POR","DFC","LTD","LTI","CAD","MCD","MC","MCO","MP","EXD","EXI","DC","SD"];
+  // Cambiar formacion EN VIVO: mantiene los 11 jugadores, reasigna sus posiciones al patron
+  const changeFormLive=(fk)=>{
+    const M=MR.current;if(!M)return;
+    const side=M.h===my?"H":"A";
+    const xiL=side==="H"?M.xiH:M.xiA;
+    const pattern=FORMS[fk];if(!pattern)return;
+    // asignar cada nueva posicion al jugador activo que mejor rinda ahi, 1 a 1
+    const active=xiL.map((e,si)=>({e,si})).filter(x=>!x.e.off);
+    const used=new Set();
+    const newAssign={};
+    pattern.forEach((pos,pi)=>{
+      let best=-1,bEff=-1;
+      active.forEach(({e,si})=>{if(used.has(si))return;const ef=effOf(M.R[side==="H"?M.h:M.a][e.idx],pos);if(ef>bEff){bEff=ef;best=si;}});
+      if(best>=0){used.add(best);newAssign[best]=pos;}
+    });
+    Object.entries(newAssign).forEach(([si,pos])=>{xiL[+si]={...xiL[+si],pos};});
+    setFormation(fk);setTick(t=>t+1);
+  };
+
+  // Reubicar a un titular en otra posicion (sin sacarlo). Para tapar huecos o ajustar.
+  const repositionPlayer=(slotIdx,newPos)=>{
+    const M=MR.current;if(!M)return;
+    const side=M.h===my?"H":"A";
+    const xiL=side==="H"?M.xiH:M.xiA;
+    if(xiL[slotIdx].off)return;
+    xiL[slotIdx]={...xiL[slotIdx],pos:newPos};
+    setMoveSel(null);setTick(t=>t+1);
+  };
+
   const setMent=(k)=>{
     setMentality(k);
     const M=MR.current;
@@ -995,7 +1052,7 @@ export default function App(){
     if(mine.pid)nres["P"+mine.pid]={h:M.h,a:M.a,hg:M.hg,ag:M.ag,pens:M.penH!==undefined?[M.penH,M.penA]:null,winner:myWinner};
     // simular el resto de la etapa
     stageMatches(stageIdx,qual,nres).forEach(m=>{
-      if(m.h===mine.h&&m.a===mine.a)return;
+      if(m.pid&&mine.pid&&m.pid===mine.pid)return;
       if(isGroup){
         const r=simScore(m.h,m.a,bestXI(m.h,"4-4-2",rosters,injuries),bestXI(m.a,"4-4-2",rosters,injuries),rosters);
         applyResult(m.h,m.a,r.hg,r.ag,r.sH,r.sA,true,ns,nsc);
@@ -1015,6 +1072,8 @@ export default function App(){
     const ninj={};
     Object.entries(injuries).forEach(([k,v])=>{if(v>1)ninj[k]=v-1;});
     M.newInjuries.forEach(x=>{ninj[x.t+"_"+x.idx]=x.weeks;});
+    // expulsados: 1 partido de suspension (se cumple el proximo)
+    (M.redCards||[]).forEach(x=>{ninj[x.t+"_"+x.idx]=Math.max(ninj[x.t+"_"+x.idx]||0,1);});
     setInjuries(ninj);
     // acumular estadisticas por jugador (base para pantalla futura)
     const nps={...pstats};
@@ -1113,7 +1172,7 @@ export default function App(){
       <div style={{color:C.grn,fontSize:11,lineHeight:1.8}}>{tr("t4").split("<br/>").map((s,k)=><div key={k}>{s}</div>)}</div>
     </div>
     <div style={{display:"flex",justifyContent:"center",gap:6,padding:"0 0 8px"}}>
-      {[["es","ESPA\u00d1OL"],["en","ENGLISH"],["pt","PORTUGU\u00caS"]].map(([k,l])=><div key={k} onClick={()=>setLang(k)} style={{padding:"5px 10px",cursor:"pointer",fontSize:11,fontWeight:"bold",border:"1px solid "+C.line,background:lang===k?C.sel:C.panel,color:lang===k?"#000":C.cyan}}>{l}</div>)}
+      {[["es","ESPAÑOL"],["en","ENGLISH"],["pt","PORTUGUÊS"]].map(([k,l])=><div key={k} onClick={()=>setLang(k)} style={{padding:"5px 10px",cursor:"pointer",fontSize:11,fontWeight:"bold",border:"1px solid "+C.line,background:lang===k?C.sel:C.panel,color:lang===k?"#000":C.cyan}}>{l}</div>)}
     </div>
     <div style={{display:"flex",justifyContent:"center",gap:6,paddingBottom:10}}>
       {[["dark",tr("dark")],["light",tr("light")]].map(([k,l])=><div key={k} onClick={()=>setTheme(k)} style={{padding:"5px 10px",cursor:"pointer",fontSize:11,fontWeight:"bold",border:"1px solid "+C.line,background:theme===k?C.sel:C.panel,color:theme===k?"#000":C.cyan}}>{l}</div>)}
@@ -1124,14 +1183,14 @@ export default function App(){
   </div>);
 
   if(screen==="edition")return wrap(<div>
-    <Bar t="DT \u2014 ELEGI LA EPOCA"/>
+    <Bar t="DT — ELEGI LA EPOCA"/>
     {Object.entries(TOURNEYS).map(([k,tt])=>{
       const done=false;
       return <div key={k} onClick={()=>{
         setTid(k);resetTournament(k);setMy(null);
         setScreen("select");
       }} style={{padding:"14px 16px",cursor:"pointer",borderBottom:"2px solid "+C.line,background:C.panel}}>
-        <div style={{fontSize:18,fontWeight:"bold",color:tt.accent}}>{tt.name}</div>
+        <div style={{fontSize:18,fontWeight:"bold",color:theme==="light"?C.cyan:tt.accent}}>{tt.name}</div>
         <div style={{fontSize:11,color:C.gry,marginTop:3}}>{tt.teams} selecciones \u00b7 {tt.squad} jugadores \u00b7 {tt.subs} cambios \u00b7 {tt.winPts} pts x victoria</div>
       </div>;
     })}
@@ -1159,12 +1218,12 @@ export default function App(){
       <Bar t={tnOf(my)+" - 2026"}/>
       <div style={{padding:"8px 12px",fontSize:12,color:C.cyan,borderBottom:"2px solid "+C.line,lineHeight:1.8}}>
         <Chip i={my} full/> {tr("group")} {ALL[my].g}<br/>
-        {tr("stage")}: <span style={{color:C.yel,fontWeight:"bold"}}>{stageIdx<NS?tr("stages")[stageIdx]:tr("finished")}</span>
+        {tr("stage")}: <span style={{color:C.yel,fontWeight:"bold"}}>{stageLabel(stageIdx)}</span>
         {nInj>0&&<span> | <span style={{color:C.red}}>{tr("injured")}: {nInj}</span></span>}
         {champ&&<div style={{color:C.yel,fontWeight:"bold",marginTop:6,fontSize:13}}>
-          {"\u2605"} {tr("champ")}: {tnOf(champ.winner).toUpperCase()} {"\u2605"}
+          {"★"} {tr("champ")}: {tnOf(champ.winner).toUpperCase()} {"★"}
           {champ.winner===my?<div style={{color:C.grn}}>{tr("congrats")}</div>:null}
-          {champ&&<div onClick={()=>window.open(DONATE_URL,"_blank")} style={{marginTop:6,padding:"6px 10px",cursor:"pointer",textAlign:"center",background:C.pick,color:C.grn,fontWeight:"bold",fontSize:12,border:"1px solid "+C.line}}>{tr("donateMsg")} \u2014 {tr("donate")}</div>}
+          {champ&&<div onClick={()=>window.open(DONATE_URL,"_blank")} style={{marginTop:6,padding:"6px 10px",cursor:"pointer",textAlign:"center",background:C.pick,color:C.grn,fontWeight:"bold",fontSize:12,border:"1px solid "+C.line}}>{tr("donateMsg")} — {tr("donate")}</div>}
         </div>}
         {mine&&!champ&&<div style={{color:C.wht,marginTop:4}}>{tr("next")}: <Chip i={mine.h}/> vs <Chip i={mine.a}/>{mine.pid?" (P"+mine.pid+")":""}</div>}
         {!mine&&!champ&&stageIdx<NS&&<div style={{color:C.red,marginTop:4}}>{tr("elim")}</div>}
@@ -1198,36 +1257,49 @@ export default function App(){
   </div>);
 
   // Coordenadas (x%,y%) por posicion para la mini-cancha (y=0 arriba=arco propio)
-  const PITCH_XY={POR:[50,92],DFC:[50,75],LTD:[82,72],LTI:[18,72],CAD:[50,72],MCD:[50,58],MC:[50,46],MCO:[50,34],MP:[50,28],EXD:[82,32],EXI:[18,32],DC:[50,16],SD:[38,20]};
-  const pitchPos=(pos,idx,sameCount,order)=>{
-    const base=PITCH_XY[pos]||[50,50];
-    let x=base[0],y=base[1];
-    if(sameCount>1){const spread=64/sameCount;x=18+spread*(order+0.5);} // repartir en la linea
-    return [x,y];
-  };
+  // Coordenadas de cancha. x: 0=izquierda 100=derecha (vista TV, tu arco abajo).
+  // y: 0=arco rival (arriba) 100=arco propio (abajo). Lado correcto por posicion.
+  const PITCH_Y={POR:90,DFC:74,LTD:74,LTI:74,CAD:74,MCD:60,MC:48,MCO:36,MP:30,EXD:34,EXI:34,DC:18,SD:24};
+  const SIDE={LTD:"R",LTI:"L",EXD:"R",EXI:"L"}; // posiciones de banda fijas
   const Pitch=({xiL})=>{
     const act=xiL.filter(e=>!e.off);
-    // agrupar por "linea" (misma y aproximada) para repartir en horizontal
-    const byPos={};act.forEach(e=>{(byPos[e.pos]=byPos[e.pos]||[]).push(e);});
-    const lines={};act.forEach(e=>{const y=(PITCH_XY[e.pos]||[50,50])[1];(lines[y]=lines[y]||[]).push(e);});
-    return <svg viewBox="0 0 100 100" style={{width:"100%",maxHeight:200,display:"block",background:C.statBg,borderBottom:"2px solid "+C.line}}>
+    // agrupar por linea (misma y) para repartir en horizontal respetando bandas
+    const lines={};
+    act.forEach((e,gi)=>{const y=PITCH_Y[e.pos]||50;(lines[y]=lines[y]||[]).push({e,gi});});
+    const place=[];
+    Object.keys(lines).forEach(yk=>{
+      const arr=lines[yk]; const y=+yk; const n=arr.length;
+      // separar los de banda (lado fijo) de los centrales
+      const lefts=arr.filter(o=>SIDE[o.e.pos]==="L");
+      const rights=arr.filter(o=>SIDE[o.e.pos]==="R");
+      const center=arr.filter(o=>!SIDE[o.e.pos]);
+      // anchura total segun cuantos hay (mas jugadores = mas abiertos)
+      const fullW=n>=4?86:n===3?74:n===2?52:0;
+      // armar orden visual: izq -> centro -> der
+      const ordered=[...lefts,...center,...rights];
+      const m=ordered.length;
+      ordered.forEach((o,i)=>{
+        let x;
+        if(m===1)x=50;
+        else x=(50-fullW/2)+ (fullW/(m-1))*i;
+        place.push({...o,x,y});
+      });
+    });
+    return <svg viewBox="0 0 100 100" style={{width:"100%",maxHeight:210,display:"block",background:C.statBg,borderBottom:"2px solid "+C.line}}>
       <rect x="2" y="2" width="96" height="96" fill="none" stroke={C.line} strokeWidth="0.5"/>
       <line x1="2" y1="50" x2="98" y2="50" stroke={C.line} strokeWidth="0.4"/>
       <circle cx="50" cy="50" r="9" fill="none" stroke={C.line} strokeWidth="0.4"/>
-      <rect x="32" y="2" width="36" height="14" fill="none" stroke={C.line} strokeWidth="0.4"/>
-      <rect x="32" y="84" width="36" height="14" fill="none" stroke={C.line} strokeWidth="0.4"/>
-      {Object.values(lines).flatMap(arr=>arr.map((e,i)=>{
-        const y=(PITCH_XY[e.pos]||[50,50])[1];
-        const n=arr.length;
-        const x=n===1?(PITCH_XY[e.pos]||[50,50])[0]:(16+(68/n)*(i+0.5));
+      <rect x="30" y="2" width="40" height="13" fill="none" stroke={C.line} strokeWidth="0.4"/>
+      <rect x="30" y="85" width="40" height="13" fill="none" stroke={C.line} strokeWidth="0.4"/>
+      {place.map(({e,x,y})=>{
         const p=rosters[my][e.idx];
         const nm=p[0].length>9?p[0].slice(0,8):p[0];
         return <g key={e.idx}>
-          <circle cx={x} cy={y} r="4.2" fill={C.cyan} stroke="#000" strokeWidth="0.4"/>
-          <text x={x} y={y+1.6} textAnchor="middle" fontSize="4.2" fontWeight="bold" fill="#000">{e.pos}</text>
-          <text x={x} y={y+8} textAnchor="middle" fontSize="3.6" fill={C.wht}>{nm}</text>
+          <circle cx={x} cy={y} r="4" fill={C.cyan} stroke="#000" strokeWidth="0.4"/>
+          <text x={x} y={y+1.5} textAnchor="middle" fontSize="3.6" fontWeight="bold" fill="#000">{e.pos}</text>
+          <text x={x} y={y+8} textAnchor="middle" fontSize="3.4" fill={C.wht}>{nm}</text>
         </g>;
-      }))}
+      })}
     </svg>;
   };
   if(screen==="tactics"){
@@ -1250,7 +1322,7 @@ export default function App(){
         <span style={{width:36,color:fitColor(myFit[e.idx]||100),fontSize:11}}>{Math.round(myFit[e.idx]||100)}%</span>
         <span style={{color:pen?C.red:ratColor(eff),fontWeight:"bold"}}>{eff}{pen?"!":""}</span>
       </div>;})}
-      <div style={{padding:"6px 12px",fontSize:11,color:C.cyan}}>{tr("bench")}{slotSel!==null?" \u2014 "+tr("chooseFor")+" "+xi[slotSel].pos:""}</div>
+      <div style={{padding:"6px 12px",fontSize:11,color:C.cyan}}>{tr("bench")}{slotSel!==null?" — "+tr("chooseFor")+" "+xi[slotSel].pos:""}</div>
       {bench.map(i=>{const p=rosters[my][i];const hurt=isInj(my,i);const eff=slotSel!==null?effOf(p,xi[slotSel].pos):p[4];
         return <div key={i} onClick={()=>{if(slotSel===null||hurt)return;swapTac(slotSel,i);}} style={{padding:"5px 12px",fontSize:13,display:"flex",cursor:"pointer",borderBottom:"1px solid "+C.line,opacity:hurt?0.5:1}}>
         <span style={{width:38,color:C.gry,fontSize:11}}>{p[2]}</span>
@@ -1303,7 +1375,7 @@ export default function App(){
       </div>;
     };
     const b=BR();
-    const lbl=s=>s.replace("X","3\u00ba ").replace("T","3\u00ba ").replace("1","1\u00ba ").replace("2","2\u00ba ");
+    const lbl=s=>s.replace("X","3º ").replace("T","3º ").replace("1","1º ").replace("2","2º ");
     const firstKO=b.koStages[0];
     return wrap(<div>
       <Bar t={tr("bracket")}/>
@@ -1318,7 +1390,7 @@ export default function App(){
         {b.SF.map(([pid])=><R key={pid} pid={pid}/>)}
         <div style={{padding:"4px 10px",fontSize:11,color:C.cyan,fontWeight:"bold"}}>{tr("p3")}</div>
         <R pid={b.P3}/>
-        <div style={{padding:"4px 10px",fontSize:11,color:C.yel,fontWeight:"bold"}}>{"\u2605"} {tr("final")}</div>
+        <div style={{padding:"4px 10px",fontSize:11,color:C.yel,fontWeight:"bold"}}>{"★"} {tr("final")}</div>
         <R pid={b.FINAL}/>
       </div>
       <Btn onClick={()=>setScreen("menu")}>{tr("back")}</Btn>
@@ -1334,7 +1406,7 @@ export default function App(){
     const Tabla=({title,list,val,fmt,col})=>(<div style={{marginBottom:10}}>
       <div style={{padding:"5px 12px",fontSize:11,color:C.cyan,fontWeight:"bold",background:C.statBg}}>{title}</div>
       {list.map((s,i)=><div key={i} style={{padding:"4px 12px",fontSize:12,display:"flex",alignItems:"center",borderBottom:"1px solid "+C.line2}}>
-        <span style={{width:22,color:i===0?C.yel:C.gry,fontSize:11}}>{i===0?"\u2605":i+1}</span>
+        <span style={{width:22,color:i===0?C.yel:C.gry,fontSize:11}}>{i===0?"★":i+1}</span>
         <span style={{flex:1,color:s.t===my?C.yel:C.wht}}>{s.name} <Chip i={s.t}/></span>
         <span style={{width:34,textAlign:"right",color:col,fontWeight:"bold"}}>{fmt(s)}</span>
       </div>)}
@@ -1343,7 +1415,7 @@ export default function App(){
       <Bar t={tr("stats")}/>
       {empty&&<div style={{padding:14,fontSize:13,color:C.gry}}>{tr("noStats")}</div>}
       {!empty&&<div style={{maxHeight:430,overflowY:"auto"}}>
-        <Tabla title={"\u26bd "+tr("topG")} list={topG} fmt={s=>s.g} col={C.grn}/>
+        <Tabla title={"⚽ "+tr("topG")} list={topG} fmt={s=>s.g} col={C.grn}/>
         <Tabla title={tr("topAssist")} list={topA} fmt={s=>s.a} col={C.cyan}/>
         <Tabla title={tr("topRated")+" ("+tr("colAvg")+")"} list={topR} fmt={s=>s.avg.toFixed(2)} col={C.yel}/>
       </div>}
@@ -1356,7 +1428,7 @@ export default function App(){
       <Bar t={tr("scorers")}/>
       {top.length===0&&<div style={{padding:14,fontSize:13,color:C.gry}}>{tr("noGoals")}</div>}
       {top.map((s,i)=><div key={i} style={{padding:"5px 12px",fontSize:13,display:"flex",alignItems:"center",borderBottom:"1px solid "+C.line}}>
-        <span style={{width:24,color:i===0?C.yel:C.gry}}>{i===0?"\u2605":i+1}</span>
+        <span style={{width:24,color:i===0?C.yel:C.gry}}>{i===0?"★":i+1}</span>
         <span style={{flex:1,color:s.t===my?C.yel:C.wht}}>{s.name} <Chip i={s.t}/></span>
         <span style={{color:C.grn,fontWeight:"bold"}}>{s.g}</span>
       </div>)}
@@ -1382,8 +1454,8 @@ export default function App(){
       </div>
       <div style={{textAlign:"center",fontSize:11,color:C.gry,paddingBottom:4,borderBottom:"2px solid "+C.line}}>
         <span style={{color:M.done?C.yel:C.grn,fontWeight:"bold",fontSize:13}}>{M.done?(M.penH!==undefined?tr("pens0")+" "+M.penH+"-"+M.penA:tr("final0")):M.paused?tr("pause0")+" "+M.minute+"'":tr("min")+" "+M.minute+"'"}</span>
-        {M.pauseReason&&<span style={{color:C.red}}> \u2014 {M.pauseReason}</span>}<br/>
-        {fmtNum(M.att)} \u2014 {M.ven[0]} ({M.ven[2]})
+        {M.pauseReason&&<span style={{color:C.red}}> — {M.pauseReason}</span>}<br/>
+        {fmtNum(M.att)} — {M.ven[0]} ({M.ven[2]})
       </div>
       <div style={{padding:"4px 8px",borderBottom:"2px solid "+C.line,background:C.statBg}}>
         <St l={tr("poss")} a={Math.round(M.pos)+"%"} b={Math.round(100-M.pos)+"%"} hl={M.pos>=50?0:1}/>
@@ -1397,7 +1469,13 @@ export default function App(){
         {M.log.map((l,i)=><div key={i} style={{color:logColor(l),fontWeight:hasAny(l,["GOL","GOAL","AVANZA","ADVANCES","AVANCA"])?"bold":"normal"}}>{l}</div>)}
       </div>
       {M.paused&&!M.done&&<div style={{borderTop:"2px solid "+C.barBorder,maxHeight:230,overflowY:"auto"}}>
-        <div style={{padding:"4px 10px",fontSize:11,color:C.cyan,fontWeight:"bold"}}>{tr("subs")} {subsLeft}) {slotSel!==null?"\u2014 "+tr("subsIn"):"\u2014 "+tr("subsWho")} | {tr("form")}: {liveShape(xiU)}</div>
+        <div style={{padding:"4px 10px",fontSize:11,color:C.cyan,fontWeight:"bold"}}>{tr("subs")} {subsLeft}) {slotSel!==null?"— "+tr("subsIn"):"— "+tr("subsWho")} | {tr("form")}: {liveShape(xiU)}</div>
+        <div style={{display:"flex",flexWrap:"wrap",gap:2,padding:"4px 10px 0"}}>
+          {Object.keys(FORMS).map(fk=><div key={fk} onClick={()=>changeFormLive(fk)} style={{padding:"3px 5px",cursor:"pointer",fontSize:9,fontWeight:"bold",background:fk===formation?C.gry:C.panel,color:fk===formation?"#000":C.yel,border:"1px solid "+C.line2}}>{fk.replace("ROMBO",tr("diamond"))}</div>)}
+        </div>
+        <div onClick={()=>{setMoveMode(m=>!m);setMoveSel(null);setSlotSel(null);}} style={{padding:"5px 10px",cursor:"pointer",fontSize:11,fontWeight:"bold",textAlign:"center",background:moveMode?C.sel:C.panel,color:moveMode?"#000":C.cyan,borderBottom:"1px solid "+C.line2}}>{tr("move")}{moveMode?" ✓":""}</div>
+        {moveMode&&<div style={{padding:"3px 10px",fontSize:10,color:C.gry}}>{tr("moveHelp")}</div>
+        }
         <div style={{display:"flex",gap:4,padding:"4px 10px",alignItems:"center"}}>
           <span style={{fontSize:10,color:C.gry,width:70}}>{tr("ment")}</span>
           {[["def",tr("mDef"),C.red],["bal",tr("mBal"),C.cyan],["ofe",tr("mOfe"),C.grn]].map(([k,lbl,col])=>{
@@ -1409,13 +1487,20 @@ export default function App(){
           <span style={{width:34}}>{tr("pos")}</span><span style={{flex:1}}>{tr("player")}</span><span style={{width:30}}>{tr("rt")}</span><span style={{width:38}}>{tr("fit")}</span><span style={{width:24,textAlign:"right"}}>{tr("eff")}</span>
         </div>
         {xiU.map((e,si)=>{const p=rosters[my][e.idx];
-          return <div key={si} onClick={()=>!e.red&&subsLeft>0&&setSlotSel(slotSel===si?null:si)} style={{padding:"3px 10px",fontSize:12,display:"flex",cursor:"pointer",background:slotSel===si?C.sel:e.off?C.off:"transparent",borderBottom:"1px solid "+C.line2,opacity:e.red?0.5:1}}>
+          return <div key={si} onClick={()=>{if(e.red)return;if(moveMode){setMoveSel(moveSel===si?null:si);}else if(subsLeft>0){setSlotSel(slotSel===si?null:si);}}} style={{padding:"3px 10px",fontSize:12,display:"flex",cursor:"pointer",background:(moveMode&&moveSel===si)?C.sel:slotSel===si?C.sel:e.off?C.off:"transparent",borderBottom:"1px solid "+C.line2,opacity:e.red?0.5:1}}>
           <span style={{width:34,color:C.cyan,fontSize:10}}>{e.pos}</span>
           <span style={{flex:1,color:e.off?C.red:C.wht}}>{p[0]}{e.red?" "+tr("redCard"):e.off?" ("+tr("les")+")":""}</span>
           <span style={{width:30,fontWeight:"bold",fontSize:11,color:rtColor((side==="H"?M.ratH:M.ratA)[si])}}>{((side==="H"?M.ratH:M.ratA)[si]).toFixed(1)}</span>
           <span style={{width:38,color:fitColor(fitU[si]),fontSize:11}}>{Math.round(fitU[si])}%</span>
           <span style={{width:24,textAlign:"right",color:ratColor(Math.round(effLive(p,e.pos,fitU[si])))}}>{Math.round(effLive(p,e.pos,fitU[si]))}</span>
         </div>;})}
+        {moveMode&&moveSel!==null&&<div style={{padding:"4px 10px"}}>
+          <div style={{fontSize:10,color:C.cyan,marginBottom:3}}>{tr("movePos")}: {rosters[my][xiU[moveSel].idx][0]}</div>
+          <div style={{display:"flex",flexWrap:"wrap",gap:3}}>
+            {FIELD_POS.map(ps=>{const cur=xiU[moveSel].pos===ps;const ef=effOf(rosters[my][xiU[moveSel].idx],ps);
+              return <div key={ps} onClick={()=>repositionPlayer(moveSel,ps)} style={{padding:"4px 6px",cursor:"pointer",fontSize:10,fontWeight:"bold",background:cur?C.sel:C.panel,color:cur?"#000":ratColor(ef),border:"1px solid "+C.line2,minWidth:38,textAlign:"center"}}>{ps}<br/><span style={{fontSize:9}}>{ef}</span></div>;})}
+          </div>
+        </div>}
         {slotSel!==null&&benchU.map((pi,bi)=>{const p=rosters[my][pi];
           return <div key={pi} onClick={()=>doUserSub(slotSel,bi)} style={{padding:"3px 10px",fontSize:12,display:"flex",cursor:"pointer",background:C.pick,borderBottom:"1px solid "+C.line2}}>
           <span style={{width:34,color:C.gry,fontSize:10}}>{p[2]}</span>
@@ -1445,11 +1530,11 @@ export default function App(){
           {xiU.map((e,si)=>{const p=rosters[my][e.idx];const g=gl(p[0]),a=as(p[0]);
             return <div key={"r"+si} style={{padding:"2px 10px",fontSize:12,display:"flex"}}>
             <span style={{width:34,color:C.gry,fontSize:10}}>{e.pos}</span>
-            <span style={{flex:1,color:e.red?C.red:C.wht}}>{p[0]}{g?<span style={{color:C.yel}}> {"\u26bd".repeat(Math.min(g,4))}</span>:null}{a?<span style={{color:C.grn,fontSize:10}}> +{a}A</span>:null}{e.red?" "+tr("redCard"):""}</span>
+            <span style={{flex:1,color:e.red?C.red:C.wht}}>{p[0]}{g?<span style={{color:C.yel}}> {"⚽".repeat(Math.min(g,4))}</span>:null}{a?<span style={{color:C.grn,fontSize:10}}> +{a}A</span>:null}{e.red?" "+tr("redCard"):""}</span>
             <span style={{width:34,textAlign:"right",fontWeight:"bold",color:rtColor(ratU2[si])}}>{ratU2[si].toFixed(1)}</span>
           </div>;})}
           {M.exits.map((x,k)=><div key={"x"+k} style={{padding:"2px 10px",fontSize:12,display:"flex",opacity:0.7}}>
-            <span style={{width:34,color:C.gry,fontSize:10}}>{"\u2193"}</span>
+            <span style={{width:34,color:C.gry,fontSize:10}}>{"↓"}</span>
             <span style={{flex:1,color:C.gry}}>{rosters[my][x.idx][0]} {tr("subbed")}</span>
             <span style={{width:34,textAlign:"right",color:rtColor(x.rat)}}>{x.rat.toFixed(1)}</span>
           </div>)}
@@ -1463,7 +1548,7 @@ export default function App(){
     const prevIdx=stageIdx-1;
     const champ=results[champKey()];
     return wrap(<div>
-      <Bar t={tr("results")+" - "+(prevIdx>=0&&prevIdx<NS?tr("stages")[prevIdx]:"")}/>
+      <Bar t={tr("results")+" - "+stageLabel(prevIdx)}/>
       <div style={{maxHeight:400,overflowY:"auto"}}>
       {prevIdx<koBase?GLETTERS().map(g=>{
         return <div key={g}>
@@ -1484,7 +1569,7 @@ export default function App(){
         <span style={{flex:1}}><Chip i={r.a}/></span>
       </div>)}
       </div>
-      {champ&&<div style={{padding:10,textAlign:"center",color:C.yel,fontWeight:"bold",fontSize:14}}>{"\u2605\u2605\u2605"} {tnOf(champ.winner).toUpperCase()} \u2014 {tr("champ")} {"\u2605\u2605\u2605"}</div>}
+      {champ&&<div style={{padding:10,textAlign:"center",color:C.yel,fontWeight:"bold",fontSize:14}}>{"★★★"} {tnOf(champ.winner).toUpperCase()} — {tr("champ")} {"★★★"}</div>}
       <Btn onClick={()=>setScreen("menu")} color={C.grn}>{tr("cont")}</Btn>
     </div>);
   }
