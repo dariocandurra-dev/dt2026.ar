@@ -66,7 +66,7 @@ let C={...THEMES.dark};
 const UI={
 es:{newGame:"NUEVA PARTIDA",load:"CARGAR PARTIDA",pick:"Elegir seleccion",nation:"SELECCION",group:"GRUPO",stage:"ETAPA",next:"PROXIMO",
  elim:"Tu seleccion quedo eliminada. Podes seguir el torneo.",play:"JUGAR PARTIDO",simRound:"SIMULAR RONDA",
- squad:"PLANTEL (26)",tactics:"TACTICA Y ALINEACION",groups:"GRUPOS Y TERCEROS",bracket:"CUADRO FINAL",scorers:"GOLEADORES",stats:"ESTADISTICAS",podium:"PODIO FINAL",gold:"CAMPEON",silver:"SUBCAMPEON",bronze:"TERCER PUESTO",topScorer:"GOLEADOR",bestPlayer:"MEJOR JUGADOR",ceremony:"CEREMONIA DE PREMIACION",goals:"goles",newTourney:"NUEVO TORNEO",topAssist:"ASISTENCIAS",topRated:"MEJOR PROMEDIO",topG:"GOLEADORES",noStats:"Jugá partidos para ver estadísticas.",colG:"G",colA:"A",colPJ:"PJ",colAvg:"NOTA",
+ squad:"PLANTEL",tactics:"TACTICA Y ALINEACION",groups:"GRUPOS Y TERCEROS",bracket:"CUADRO FINAL",scorers:"GOLEADORES",stats:"ESTADISTICAS",podium:"PODIO FINAL",gold:"CAMPEON",silver:"SUBCAMPEON",bronze:"TERCER PUESTO",topScorer:"GOLEADOR",bestPlayer:"MEJOR JUGADOR",ceremony:"CEREMONIA DE PREMIACION",goals:"goles",newTourney:"NUEVO TORNEO",topAssist:"ASISTENCIAS",topRated:"MEJOR PROMEDIO",topG:"GOLEADORES",noStats:"Jugá partidos para ver estadísticas.",colG:"G",colA:"A",colPJ:"PJ",colAvg:"NOTA",
  save:"GUARDAR PARTIDA",exit:"SALIR AL MENU",back:"VOLVER",cont:"CONTINUAR",resume:"REANUDAR PARTIDO",pause:"PAUSA / CAMBIOS",
  instant:"RESULTADO INSTANTANEO",injured:"LESIONADOS",champ:"CAMPEON DEL MUNDO",congrats:"¡¡FELICITACIONES, DT!! ¡GLORIA ETERNA!",
  finished:"TORNEO FINALIZADO",pos:"POS",player:"JUGADOR",age:"EDAD",fit:"FIS",val:"VAL",rt:"NOTA",eff:"EF",diamond:"ROMBO",years:"años",card:"Ficha",
@@ -86,7 +86,7 @@ es:{newGame:"NUEVA PARTIDA",load:"CARGAR PARTIDA",pick:"Elegir seleccion",nation
  attrGK:["Agilidad","Juego aereo","Vel. salida","Distribucion","Posicionam.","Saque largo","Juego pies","Reflejos","Mando area","Decisiones","Liderazgo","Atajadas"]},
 en:{newGame:"NEW GAME",load:"LOAD GAME",pick:"Choose your nation",nation:"NATION",group:"GROUP",stage:"STAGE",next:"NEXT",
  elim:"Your team is out. You can follow the tournament.",play:"PLAY MATCH",simRound:"SIMULATE ROUND",
- squad:"SQUAD (26)",tactics:"TACTICS & LINEUP",groups:"GROUPS & 3RD PLACES",bracket:"KNOCKOUT BRACKET",scorers:"TOP SCORERS",stats:"STATISTICS",podium:"FINAL PODIUM",gold:"CHAMPION",silver:"RUNNER-UP",bronze:"THIRD PLACE",topScorer:"TOP SCORER",bestPlayer:"BEST PLAYER",ceremony:"AWARDS CEREMONY",goals:"goals",newTourney:"NEW TOURNAMENT",topAssist:"TOP ASSISTS",topRated:"BEST RATED",topG:"TOP SCORERS",noStats:"Play matches to see statistics.",colG:"G",colA:"A",colPJ:"GP",colAvg:"RTG",
+ squad:"SQUAD",tactics:"TACTICS & LINEUP",groups:"GROUPS & 3RD PLACES",bracket:"KNOCKOUT BRACKET",scorers:"TOP SCORERS",stats:"STATISTICS",podium:"FINAL PODIUM",gold:"CHAMPION",silver:"RUNNER-UP",bronze:"THIRD PLACE",topScorer:"TOP SCORER",bestPlayer:"BEST PLAYER",ceremony:"AWARDS CEREMONY",goals:"goals",newTourney:"NEW TOURNAMENT",topAssist:"TOP ASSISTS",topRated:"BEST RATED",topG:"TOP SCORERS",noStats:"Play matches to see statistics.",colG:"G",colA:"A",colPJ:"GP",colAvg:"RTG",
  save:"SAVE GAME",exit:"EXIT TO MENU",back:"BACK",cont:"CONTINUE",resume:"RESUME MATCH",pause:"PAUSE / SUBS",
  instant:"INSTANT RESULT",injured:"INJURED",champ:"WORLD CHAMPION",congrats:"CONGRATULATIONS, GAFFER!! ETERNAL GLORY!",
  finished:"TOURNAMENT OVER",pos:"POS",player:"PLAYER",age:"AGE",fit:"FIT",val:"RAT",rt:"RTG",eff:"EFF",diamond:"DIAMOND",years:"yrs",card:"Profile",
@@ -106,7 +106,7 @@ en:{newGame:"NEW GAME",load:"LOAD GAME",pick:"Choose your nation",nation:"NATION
  attrGK:["Agility","Aerial","Rushing out","Distribution","Positioning","Long kicks","Footwork","Reflexes","Command","Decisions","Leadership","Shot stopping"]},
 pt:{newGame:"NOVO JOGO",load:"CARREGAR JOGO",pick:"Escolha sua selecao",nation:"SELECAO",group:"GRUPO",stage:"FASE",next:"PROXIMO",
  elim:"Sua selecao foi eliminada. Voce pode acompanhar o torneio.",play:"JOGAR PARTIDA",simRound:"SIMULAR RODADA",
- squad:"ELENCO (26)",tactics:"TATICA E ESCALACAO",groups:"GRUPOS E TERCEIROS",bracket:"CHAVEAMENTO",scorers:"ARTILHEIROS",stats:"ESTATISTICAS",podium:"PODIO FINAL",gold:"CAMPEAO",silver:"VICE-CAMPEAO",bronze:"TERCEIRO LUGAR",topScorer:"ARTILHEIRO",bestPlayer:"MELHOR JOGADOR",ceremony:"CERIMONIA DE PREMIACAO",goals:"gols",newTourney:"NOVO TORNEIO",topAssist:"ASSISTENCIAS",topRated:"MELHOR MEDIA",topG:"ARTILHEIROS",noStats:"Jogue partidas para ver estatisticas.",colG:"G",colA:"A",colPJ:"J",colAvg:"NOTA",
+ squad:"ELENCO",tactics:"TATICA E ESCALACAO",groups:"GRUPOS E TERCEIROS",bracket:"CHAVEAMENTO",scorers:"ARTILHEIROS",stats:"ESTATISTICAS",podium:"PODIO FINAL",gold:"CAMPEAO",silver:"VICE-CAMPEAO",bronze:"TERCEIRO LUGAR",topScorer:"ARTILHEIRO",bestPlayer:"MELHOR JOGADOR",ceremony:"CERIMONIA DE PREMIACAO",goals:"gols",newTourney:"NOVO TORNEIO",topAssist:"ASSISTENCIAS",topRated:"MELHOR MEDIA",topG:"ARTILHEIROS",noStats:"Jogue partidas para ver estatisticas.",colG:"G",colA:"A",colPJ:"J",colAvg:"NOTA",
  save:"SALVAR JOGO",exit:"SAIR AO MENU",back:"VOLTAR",cont:"CONTINUAR",resume:"RETOMAR PARTIDA",pause:"PAUSA / SUBSTITUICOES",
  instant:"RESULTADO INSTANTANEO",injured:"LESIONADOS",champ:"CAMPEAO DO MUNDO",congrats:"PARABENS, TREINADOR!! GLORIA ETERNA!",
  finished:"TORNEIO ENCERRADO",pos:"POS",player:"JOGADOR",age:"IDADE",fit:"FIS",val:"VAL",rt:"NOTA",eff:"EF",diamond:"LOSANGO",years:"anos",card:"Ficha",
@@ -1269,7 +1269,7 @@ export default function App(){
       </div>
       {mine&&stageIdx<NS&&<Btn onClick={playMatch} color={C.grn}>{tr("play")}</Btn>}
       {!mine&&stageIdx<NS&&!champ&&<Btn onClick={spectate} color={C.gry}>{tr("simRound")}</Btn>}
-      <Btn onClick={()=>setScreen("squad")}>{tr("squad")}</Btn>
+      <Btn onClick={()=>setScreen("squad")}>{tr("squad")} ({T.squad})</Btn>
       <Btn onClick={()=>setScreen("tactics")}>{tr("tactics")}</Btn>
       <Btn onClick={()=>setScreen("groups")}>{tr("groups")}</Btn>
       <Btn onClick={()=>setScreen("bracket")}>{tr("bracket")}</Btn>
@@ -1281,7 +1281,7 @@ export default function App(){
   }
 
   if(screen==="squad")return wrap(<div>
-    <Bar t={tr("squad")+" - "+tnOf(my)}/>
+    <Bar t={tr("squad")+" ("+T.squad+") - "+tnOf(my)}/>
     <div style={{padding:"6px 12px",fontSize:11,color:C.gry,display:"flex"}}>
       <span style={{width:38}}>{tr("pos")}</span><span style={{flex:1}}>{tr("player")}</span><span style={{width:30}}>{tr("age")}</span><span style={{width:34}}>{tr("fit")}</span><span style={{width:26,textAlign:"right"}}>{tr("val")}</span>
     </div>
@@ -1493,7 +1493,6 @@ export default function App(){
     const rows=Object.entries(pstats).map(([k,v])=>{const ix=k.lastIndexOf("|");return {name:k.slice(0,ix),t:+k.slice(ix+1),...v,avg:v.pj?v.rs/v.pj:0};});
     const empty=rows.length===0;
     const topG=rows.filter(r=>r.g>0).sort((a,b)=>b.g-a.g||b.a-a.a).slice(0,10);
-    const topA=rows.filter(r=>r.a>0).sort((a,b)=>b.a-a.a||b.g-a.g).slice(0,10);
     const topR=rows.filter(r=>r.pj>=2).sort((a,b)=>b.avg-a.avg).slice(0,10);
     const Tabla=({title,list,val,fmt,col})=>(<div style={{marginBottom:10}}>
       <div style={{padding:"5px 12px",fontSize:11,color:C.cyan,fontWeight:"bold",background:C.statBg}}>{title}</div>
@@ -1508,7 +1507,6 @@ export default function App(){
       {empty&&<div style={{padding:14,fontSize:13,color:C.gry}}>{tr("noStats")}</div>}
       {!empty&&<div style={{maxHeight:430,overflowY:"auto"}}>
         <Tabla title={"⚽ "+tr("topG")} list={topG} fmt={s=>s.g} col={C.grn}/>
-        <Tabla title={tr("topAssist")} list={topA} fmt={s=>s.a} col={C.cyan}/>
         <Tabla title={tr("topRated")+" ("+tr("colAvg")+")"} list={topR} fmt={s=>s.avg.toFixed(2)} col={C.yel}/>
       </div>}
       <Btn onClick={()=>setScreen("menu")}>{tr("back")}</Btn>
@@ -1637,12 +1635,14 @@ export default function App(){
   }
 
   const advanceFromResults=()=>{
-    // si la etapa ACTUAL es el 3er puesto y el usuario no participa, auto-simularlo
+    // si la etapa ACTUAL es el 3er puesto y el usuario NO participa, auto-simularlo
     const p3idx=T.stages.indexOf("P3");
+    const finalIdx=T.stages.indexOf("F");
     if(stageIdx===p3idx){
       const ms=stageMatches(stageIdx,qual,results);
       const mineP3=ms.find(m=>m.h===my||m.a===my);
       if(!mineP3&&ms.length>0){
+        // usuario no juega P3: simular automaticamente y mostrar resultado
         const nres={...results};const nps={...pstats};
         ms.forEach(m=>{
           if(nres["P"+m.pid])return;
@@ -1656,6 +1656,14 @@ export default function App(){
         setScreen("stageres");
         return;
       }
+      // usuario juega P3: volver al menu para que lo juegue
+      setScreen("menu");
+      return;
+    }
+    // despues de la final: ir directo a ceremonia
+    if(stageIdx===finalIdx+1){
+      setScreen("podium");
+      return;
     }
     setScreen("menu");
   };
@@ -1685,7 +1693,13 @@ export default function App(){
       </div>)}
       </div>
       {champ&&<div style={{padding:10,textAlign:"center",color:C.yel,fontWeight:"bold",fontSize:14}}>{"★★★"} {tnOf(champ.winner).toUpperCase()} — {tr("champ")} {"★★★"}</div>}
-      <Btn onClick={advanceFromResults} color={C.grn}>{tr("cont")}</Btn>
+      {(()=>{
+        const fIdx=T.stages.indexOf("F");
+        if(stageIdx-1>=0&&T.stages[stageIdx-1]==="F"){
+          return <Btn onClick={advanceFromResults} color={C.yel}>{"\u2605 "+tr("ceremony")}</Btn>;
+        }
+        return <Btn onClick={advanceFromResults} color={C.grn}>{tr("cont")}</Btn>;
+      })()}
     </div>);
   }
 
