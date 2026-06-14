@@ -64,7 +64,7 @@ es:{newGame:"NUEVA PARTIDA",load:"CARGAR PARTIDA",pick:"Elegir seleccion",nation
  subs:"CAMBIOS (quedan",subsWho:"toca quien sale",subsIn:"elegi quien entra",form:"FORMACION",
  ratings:"PUNTUACIONES",motm:"FIGURA",subbed:"(sustituido)",att:"espectadores",thirds:"RANKING DE TERCEROS",
  qualifies:"CLASIFICA",out:"ELIMINADO",note3:"Celeste: clasifica directo | Amarillo: tercero (8 mejores pasan)",
- r32:"RONDA 1",r16:"RONDA 2",qf:"RONDA 3",sf:"SEMIFINAL",p3:"3ER PUESTO",round:"RONDA",final:"GRAN FINAL (MetLife, 19 jul)",
+ r32:"RONDA 1",r16:"RONDA 2",qf:"RONDA 3",sf:"SEMIFINAL",p3:"3ER PUESTO",round:"RONDA",final:"GRAN FINAL",
  tbd:"por definir",results:"Resultados",noGoals:"Todavia no se anotaron goles.",saved:"PARTIDA GUARDADA OK",
  saveErr:"ERROR AL GUARDAR",noSave:"NO HAY PARTIDA GUARDADA",final0:"FINAL",pens0:"PENALES",min:"MINUTO",pause0:"PAUSA",
  poss:"POSESION",shots:"TIROS",onT:"AL ARCO",yel0:"AMARILLAS",red0:"ROJAS",inj0:"LESIONES",dark:"OSCURO",light:"CLARO",ment:"MENTALIDAD",move:"REUBICAR",moveHelp:"Tocá un titular y luego su nueva posición",movePos:"NUEVA POSICION",mDef:"DEFENSIVA",mBal:"EQUILIBRADA",mOfe:"OFENSIVA",
@@ -84,7 +84,7 @@ en:{newGame:"NEW GAME",load:"LOAD GAME",pick:"Choose your nation",nation:"NATION
  subs:"SUBS (left:",subsWho:"tap who comes off",subsIn:"pick who comes on",form:"FORMATION",
  ratings:"MATCH RATINGS",motm:"MOTM",subbed:"(subbed off)",att:"attendance",thirds:"3RD-PLACE RANKING",
  qualifies:"THROUGH",out:"OUT",note3:"Cyan: direct qualification | Yellow: third place (best 8 advance)",
- r32:"ROUND 1",r16:"ROUND 2",qf:"ROUND 3",sf:"SEMI-FINAL",p3:"3RD PLACE",round:"ROUND",final:"GRAND FINAL (MetLife, Jul 19)",
+ r32:"ROUND 1",r16:"ROUND 2",qf:"ROUND 3",sf:"SEMI-FINAL",p3:"3RD PLACE",round:"ROUND",final:"GRAND FINAL",
  tbd:"to be decided",results:"Results",noGoals:"No goals scored yet.",saved:"GAME SAVED OK",
  saveErr:"SAVE ERROR",noSave:"NO SAVED GAME",final0:"FULL TIME",pens0:"PENALTIES",min:"MINUTE",pause0:"PAUSED",
  poss:"POSSESSION",shots:"SHOTS",onT:"ON TARGET",yel0:"YELLOWS",red0:"REDS",inj0:"INJURIES",dark:"DARK",light:"LIGHT",ment:"MENTALITY",move:"REPOSITION",moveHelp:"Tap a starter, then their new position",movePos:"NEW POSITION",mDef:"DEFENSIVE",mBal:"BALANCED",mOfe:"ATTACKING",
@@ -104,7 +104,7 @@ pt:{newGame:"NOVO JOGO",load:"CARREGAR JOGO",pick:"Escolha sua selecao",nation:"
  subs:"SUBSTITUICOES (restam",subsWho:"toque quem sai",subsIn:"escolha quem entra",form:"FORMACAO",
  ratings:"NOTAS DA PARTIDA",motm:"CRAQUE",subbed:"(substituido)",att:"torcedores",thirds:"RANKING DE TERCEIROS",
  qualifies:"CLASSIFICA",out:"ELIMINADO",note3:"Ciano: classifica direto | Amarelo: terceiro (8 melhores avancam)",
- r32:"RODADA 1",r16:"RODADA 2",qf:"RODADA 3",sf:"SEMIFINAL",p3:"3o LUGAR",round:"RODADA",final:"GRANDE FINAL (MetLife, 19 jul)",
+ r32:"RODADA 1",r16:"RODADA 2",qf:"RODADA 3",sf:"SEMIFINAL",p3:"3o LUGAR",round:"RODADA",final:"GRANDE FINAL",
  tbd:"a definir",results:"Resultados",noGoals:"Nenhum gol marcado ainda.",saved:"JOGO SALVO OK",
  saveErr:"ERRO AO SALVAR",noSave:"NENHUM JOGO SALVO",final0:"FIM DE JOGO",pens0:"PENALTIS",min:"MINUTO",pause0:"PAUSA",
  poss:"POSSE",shots:"FINALIZACOES",onT:"NO GOL",yel0:"AMARELOS",red0:"VERMELHOS",inj0:"LESOES",dark:"ESCURO",light:"CLARO",ment:"MENTALIDADE",move:"REPOSICIONAR",moveHelp:"Toque um titular e depois a nova posicao",movePos:"NOVA POSICAO",mDef:"DEFENSIVA",mBal:"EQUILIBRADA",mOfe:"OFENSIVA",
@@ -360,7 +360,7 @@ function ageAll(R){
 
 // ============ MOTOR DE PARTIDO EN VIVO v4 ============
 const drainRate=p=>clampA(0.62-(p[16]-10)*0.025,0.2,0.8);
-const effLive=(p,pos,fit)=>effOf(p,pos)*(0.72+0.28*fit/100);
+const effLive=(p,pos,fit)=>effOf(p,pos)*(0.88+0.12*fit/100);
 
 // Mentalidad tactica: como afecta ataque/defensa/posesion
 // def(ensiva): se cierra, menos ataque + mas defensa | ofe(nsiva): al frente, mas ataque - defensa
@@ -452,7 +452,7 @@ function stepMinute(M,myIdx,auto){
       xi.forEach((e,si)=>{
         if(e.off)return;
         const q=(effLive(M.R[t][e.idx],e.pos,fit[si])-74)/300;
-        bumpR(M,side,si,(Math.random()-0.5)*0.22+dom+q*0.18);
+        bumpR(M,side,si,(Math.random()-0.5)*0.42+dom*1.5+q*0.28);
       });
     });
   }
@@ -475,7 +475,7 @@ function stepMinute(M,myIdx,auto){
           (side==="H"?M.sH:M.sA).push(shooter);
           const xiMe=side==="H"?M.xiH:M.xiA;
           const sIdx=xiMe.findIndex(e=>!e.off&&M.R[t][e.idx][0]===shooter);
-          bumpR(M,side,sIdx,1.15);
+          bumpR(M,side,sIdx,1.6);
           let aTxt="";
           if(M.ratH&&Math.random()<0.62){
             const cands=xiMe.map((e,si)=>({e,si})).filter(x=>!x.e.off&&x.si!==sIdx&&x.e.pos!=="POR");
@@ -483,19 +483,19 @@ function stepMinute(M,myIdx,auto){
               const ws=cands.map(c=>M.R[t][c.e.idx][11]+M.R[t][c.e.idx][14]);
               let r=Math.random()*ws.reduce((a,b)=>a+b,0),pick=cands[0];
               for(let i=0;i<cands.length;i++){r-=ws[i];if(r<=0){pick=cands[i];break;}}
-              bumpR(M,side,pick.si,0.7);
+              bumpR(M,side,pick.si,0.9);
               (side==="H"?M.assH:M.assA).push(M.R[t][pick.e.idx][0]);
               aTxt=" ("+LT[LANG].assist+" "+M.R[t][pick.e.idx][0]+")";
             }
           }
           const op=side==="H"?"A":"H";
-          bumpR(M,op,gkSlot(op,M),-0.25);
+          bumpR(M,op,gkSlot(op,M),-0.45);
           const xiOp=op==="H"?M.xiH:M.xiA;
-          xiOp.forEach((e,si)=>{if(!e.off&&e.pos==="DFC")bumpR(M,op,si,-0.15);});
+          xiOp.forEach((e,si)=>{if(!e.off&&(e.pos==="DFC"||e.pos==="LTD"||e.pos==="LTI"||e.pos==="CAD"))bumpR(M,op,si,-0.32);});
           M.log.push(m+"' "+LT[LANG].goal(shooter,ALL[t].s,aTxt,M.hg,M.ag));
         } else if(Math.random()<0.5){
           M.log.push(m+"' "+LT[LANG].save(shooter,ALL[t].s));
-          bumpR(M,side==="H"?"A":"H",gkSlot(side==="H"?"A":"H",M),0.15);
+          bumpR(M,side==="H"?"A":"H",gkSlot(side==="H"?"A":"H",M),0.3);
         } else bumpR(M,side==="H"?"A":"H",gkSlot(side==="H"?"A":"H",M),0.1);
       } else if(Math.random()<0.3) M.log.push(m+"' "+LT[LANG].wide(shooter,ALL[t].s));
     }
@@ -511,11 +511,11 @@ function stepMinute(M,myIdx,auto){
         if(yel[key]){
           M.red[ix]++;v.e.off=true;v.e.red=true;
           if(M.redCards)M.redCards.push({t,idx:v.e.idx});
-          bumpR(M,side,v.si,-1.5);
+          bumpR(M,side,v.si,-2.2);
           M.log.push(m+"' "+LT[LANG].red(M.R[t][key][0],ALL[t].s));
         } else {
           yel[key]=1;M.yel[ix]++;
-          bumpR(M,side,v.si,-0.5);
+          bumpR(M,side,v.si,-0.7);
           M.log.push(m+"' "+LT[LANG].yellow(M.R[t][key][0],ALL[t].s));
         }
       }
@@ -915,8 +915,9 @@ export default function App(){
   const applyResult=(h,a,hg,ag,sH,sA,isGroup,ns,nsc)=>{
     if(isGroup){
       ns[h].pj++;ns[a].pj++;ns[h].gf+=hg;ns[h].gc+=ag;ns[a].gf+=ag;ns[a].gc+=hg;
-      if(hg>ag){ns[h].g++;ns[h].pts+=3;ns[a].p++;}
-      else if(hg<ag){ns[a].g++;ns[a].pts+=3;ns[h].p++;}
+      const wp=T.winPts;
+      if(hg>ag){ns[h].g++;ns[h].pts+=wp;ns[a].p++;}
+      else if(hg<ag){ns[a].g++;ns[a].pts+=wp;ns[h].p++;}
       else{ns[h].e++;ns[a].e++;ns[h].pts++;ns[a].pts++;}
     }
     sH.forEach(s=>{const k=s+"|"+h;nsc[k]=(nsc[k]||0)+1;});
@@ -948,7 +949,19 @@ export default function App(){
     const OPEN_GRP={"1986":"A","1990":"B","2026":"A"};
     const og=OPEN_GRP[TID]||"A";
     const isOpening=stageIdx===0&&mine.g===og&&GFIX[og]&&GFIX[og][0][0]===h&&GFIX[og][0][1]===a;
-    const ven=stKey==="F"?of.final:(isOpening&&of.open?of.open:VEN[Math.floor(Math.random()*VEN.length)]);
+    // Sedes historicas por fase final (semis, 3er puesto y final en sus estadios reales)
+    const findV=nm=>VEN.find(v=>v[0]===nm);
+    const KO_VENUE={
+      "1990":{SF:findV("Stadio San Paolo"),P3:findV("Stadio San Nicola"),F:findV("Stadio Olimpico")},
+      "1986":{SF:findV("Estadio Azteca"),P3:findV("Estadio Cuauhtemoc"),F:findV("Estadio Azteca")},
+      "2026":{SF:VEN[2],P3:VEN[3],F:of.final}
+    };
+    const kov=(KO_VENUE[TID]||{})[stKey];
+    let ven;
+    if(stKey==="F")ven=of.final;
+    else if(kov)ven=kov;
+    else if(isOpening&&of.open)ven=of.open;
+    else ven=VEN[Math.floor(Math.random()*VEN.length)];
     const att=Math.round(ven[1]*(0.92+Math.random()*0.07));
     const M={h,a,R:rosters,xiH,xiA,knockout:isKO,pid:mine.pid,
       fitH:xiH.map(e=>h===my?myFit[e.idx]:100),
@@ -973,6 +986,24 @@ export default function App(){
     },110);
   };
   const userSide=()=>MR.current&&(MR.current.h===my?"H":"A");
+  // Acumular estadisticas de un partido SIMULADO por la IA (goleadores + PJ + nota estimada)
+  const accSimMatch=(nps,h,a,r,xiHh,xiAa)=>{
+    const acc=(key,fld,v)=>{if(!nps[key])nps[key]={pj:0,g:0,a:0,y:0,r:0,rs:0};nps[key][fld]+=v;};
+    [[h,xiHh,r.sH,r.hg,r.ag],[a,xiAa,r.sA,r.ag,r.hg]].forEach(([t,xiL,scorers,gf,gc])=>{
+      const golesDe={};(scorers||[]).forEach(n=>golesDe[n]=(golesDe[n]||0)+1);
+      xiL.forEach(e=>{
+        const nm=rosters[t][e.idx][0], key=nm+"|"+t;
+        const g=golesDe[nm]||0;
+        // nota estimada: base 6 + goles - goles recibidos por defensas
+        let nota=6+g*1.6;
+        const grp=({POR:"P",DFC:"D",LTD:"D",LTI:"D",CAD:"D"})[e.pos];
+        if(grp==="D"||grp==="P")nota-=gc*0.32; else if(gf>gc)nota+=0.3;
+        nota=Math.max(2,Math.min(9.9,nota));
+        acc(key,"pj",1);acc(key,"g",g);acc(key,"rs",nota);
+      });
+    });
+  };
+
   const FIELD_POS=["POR","DFC","LTD","LTI","CAD","MCD","MC","MCO","MP","EXD","EXI","DC","SD"];
   // Cambiar formacion EN VIVO: mantiene los 11 jugadores, reasigna sus posiciones al patron
   const changeFormLive=(fk)=>{
@@ -1046,19 +1077,25 @@ export default function App(){
   const confirmStage=()=>{
     const M=MR.current; const {mine}=pendRef.current;
     const ns=gStats.map(s=>({...s})); const nsc={...scorers}; const nres={...results};
+    const nps={...pstats};
     const isGroup=stageIdx<koBase;
     applyResult(M.h,M.a,M.hg,M.ag,M.sH,M.sA,isGroup,ns,nsc);
     const myWinner=M.knockout?(M.penH!==undefined?(M.penH>M.penA?M.h:M.a):(M.hg>M.ag?M.h:M.a)):null;
     if(mine.pid)nres["P"+mine.pid]={h:M.h,a:M.a,hg:M.hg,ag:M.ag,pens:M.penH!==undefined?[M.penH,M.penA]:null,winner:myWinner};
     // simular el resto de la etapa
     stageMatches(stageIdx,qual,nres).forEach(m=>{
-      if(m.pid&&mine.pid&&m.pid===mine.pid)return;
+      // saltear el partido que el usuario ya jugo: por pid en KO, por equipos en grupos (pid es null)
+      if(isGroup){if(m.h===M.h&&m.a===M.a)return;}
+      else if(m.pid&&mine.pid&&m.pid===mine.pid)return;
+      const xiHh=bestXI(m.h,"4-4-2",rosters,injuries),xiAa=bestXI(m.a,"4-4-2",rosters,injuries);
       if(isGroup){
-        const r=simScore(m.h,m.a,bestXI(m.h,"4-4-2",rosters,injuries),bestXI(m.a,"4-4-2",rosters,injuries),rosters);
+        const r=simScore(m.h,m.a,xiHh,xiAa,rosters);
         applyResult(m.h,m.a,r.hg,r.ag,r.sH,r.sA,true,ns,nsc);
+        accSimMatch(nps,m.h,m.a,r,xiHh,xiAa);
       } else {
         const r=simKO(m.h,m.a,rosters,injuries);
         applyResult(m.h,m.a,r.hg,r.ag,r.sH,r.sA,false,ns,nsc);
+        accSimMatch(nps,m.h,m.a,r,xiHh,xiAa);
         nres["P"+m.pid]={h:m.h,a:m.a,hg:r.hg,ag:r.ag,pens:r.pens,winner:r.winner};
       }
     });
@@ -1075,8 +1112,7 @@ export default function App(){
     // expulsados: 1 partido de suspension (se cumple el proximo)
     (M.redCards||[]).forEach(x=>{ninj[x.t+"_"+x.idx]=Math.max(ninj[x.t+"_"+x.idx]||0,1);});
     setInjuries(ninj);
-    // acumular estadisticas por jugador (base para pantalla futura)
-    const nps={...pstats};
+    // acumular estadisticas del partido del usuario
     const acc=(key,f,v)=>{if(!nps[key])nps[key]={pj:0,g:0,a:0,y:0,r:0,rs:0};nps[key][f]+=v;};
     [["H",M.xiH,M.ratH,M.h,M.sH,M.assH,M.yelCardsH],["A",M.xiA,M.ratA,M.a,M.sA,M.assA,M.yelCardsA]].forEach(([s,xiL,rt,t,sc,asl,yc])=>{
       xiL.forEach((e,si)=>{
@@ -1093,17 +1129,7 @@ export default function App(){
     setGStats(ns);setScorers(nsc);setResults(nres);
     let nq=qual;
     if(stageIdx===lastGroupIdx){nq=computeQual(ns);setQual(nq);}
-    let next=stageIdx+1;
-    const p3idx=T.stages.indexOf("P3");
-    if(next===p3idx){ // saltear 3er puesto si no estoy
-      const [s1,s2]=sfPids();const sf1=nres["P"+s1],sf2=nres["P"+s2];
-      const losers=[sf1.winner===sf1.h?sf1.a:sf1.h, sf2.winner===sf2.h?sf2.a:sf2.h];
-      if(!losers.includes(my)){
-        const r=simKO(losers[0],losers[1],rosters,injuries);
-        nres["P"+BR().P3]={h:losers[0],a:losers[1],hg:r.hg,ag:r.ag,pens:r.pens,winner:r.winner};
-        setResults({...nres});next=p3idx+1;
-      }
-    }
+    const next=stageIdx+1;
     setStageIdx(next);MR.current=null;
     setScreen("stageres");
   };
@@ -1111,31 +1137,27 @@ export default function App(){
   const spectate=()=>{
     // usuario eliminado: simular toda la etapa
     const ns=gStats.map(s=>({...s})); const nsc={...scorers}; const nres={...results};
+    const nps={...pstats};
     const isGroup=stageIdx<koBase;
     stageMatches(stageIdx,qual,nres).forEach(m=>{
+      const xiHh=bestXI(m.h,"4-4-2",rosters,injuries),xiAa=bestXI(m.a,"4-4-2",rosters,injuries);
       if(isGroup){
-        const r=simScore(m.h,m.a,bestXI(m.h,"4-4-2",rosters,injuries),bestXI(m.a,"4-4-2",rosters,injuries),rosters);
+        const r=simScore(m.h,m.a,xiHh,xiAa,rosters);
         applyResult(m.h,m.a,r.hg,r.ag,r.sH,r.sA,true,ns,nsc);
+        accSimMatch(nps,m.h,m.a,r,xiHh,xiAa);
       } else {
         const r=simKO(m.h,m.a,rosters,injuries);
         applyResult(m.h,m.a,r.hg,r.ag,r.sH,r.sA,false,ns,nsc);
+        accSimMatch(nps,m.h,m.a,r,xiHh,xiAa);
         nres["P"+m.pid]={h:m.h,a:m.a,hg:r.hg,ag:r.ag,pens:r.pens,winner:r.winner};
       }
     });
+    setPstats(nps);
     let nq=qual;
     if(stageIdx===lastGroupIdx){nq=computeQual(ns);setQual(nq);}
-    let next=stageIdx+1;
-    const p3idx=T.stages.indexOf("P3");
-    if(next===p3idx){
-      const [s1,s2]=sfPids();const sf1=nres["P"+s1],sf2=nres["P"+s2];
-      const losers=[sf1.winner===sf1.h?sf1.a:sf1.h, sf2.winner===sf2.h?sf2.a:sf2.h];
-      const r=simKO(losers[0],losers[1],rosters,injuries);
-      nres["P"+BR().P3]={h:losers[0],a:losers[1],hg:r.hg,ag:r.ag,pens:r.pens,winner:r.winner};
-      next=p3idx+1;
-    }
     setGStats(ns);setScorers(nsc);setResults(nres);
     if(nq!==qual)setQual(nq);
-    setStageIdx(next);setScreen("stageres");
+    setStageIdx(stageIdx+1);setScreen("stageres");
   };
 
 
@@ -1215,7 +1237,7 @@ export default function App(){
     const champ=results[champKey()];
     const nInj=Object.keys(injuries).filter(k=>k.startsWith(my+"_")).length;
     return wrap(<div>
-      <Bar t={tnOf(my)+" - 2026"}/>
+      <Bar t={tnOf(my)+" - "+T.name}/>
       <div style={{padding:"8px 12px",fontSize:12,color:C.cyan,borderBottom:"2px solid "+C.line,lineHeight:1.8}}>
         <Chip i={my} full/> {tr("group")} {ALL[my].g}<br/>
         {tr("stage")}: <span style={{color:C.yel,fontWeight:"bold"}}>{stageLabel(stageIdx)}</span>
@@ -1492,7 +1514,7 @@ export default function App(){
           <span style={{flex:1,color:e.off?C.red:C.wht}}>{p[0]}{e.red?" "+tr("redCard"):e.off?" ("+tr("les")+")":""}</span>
           <span style={{width:30,fontWeight:"bold",fontSize:11,color:rtColor((side==="H"?M.ratH:M.ratA)[si])}}>{((side==="H"?M.ratH:M.ratA)[si]).toFixed(1)}</span>
           <span style={{width:38,color:fitColor(fitU[si]),fontSize:11}}>{Math.round(fitU[si])}%</span>
-          <span style={{width:24,textAlign:"right",color:ratColor(Math.round(effLive(p,e.pos,fitU[si])))}}>{Math.round(effLive(p,e.pos,fitU[si]))}</span>
+          <span style={{width:24,textAlign:"right",color:ratColor(effOf(p,e.pos))}}>{effOf(p,e.pos)}</span>
         </div>;})}
         {moveMode&&moveSel!==null&&<div style={{padding:"4px 10px"}}>
           <div style={{fontSize:10,color:C.cyan,marginBottom:3}}>{tr("movePos")}: {rosters[my][xiU[moveSel].idx][0]}</div>
@@ -1544,6 +1566,29 @@ export default function App(){
     </div>);
   }
 
+  const advanceFromResults=()=>{
+    // si la etapa ACTUAL es el 3er puesto y el usuario no participa, auto-simularlo
+    const p3idx=T.stages.indexOf("P3");
+    if(stageIdx===p3idx){
+      const ms=stageMatches(stageIdx,qual,results);
+      const mineP3=ms.find(m=>m.h===my||m.a===my);
+      if(!mineP3&&ms.length>0){
+        const nres={...results};const nps={...pstats};
+        ms.forEach(m=>{
+          if(nres["P"+m.pid])return;
+          const xiHh=bestXI(m.h,"4-4-2",rosters,injuries),xiAa=bestXI(m.a,"4-4-2",rosters,injuries);
+          const r=simKO(m.h,m.a,rosters,injuries);
+          accSimMatch(nps,m.h,m.a,r,xiHh,xiAa);
+          nres["P"+m.pid]={h:m.h,a:m.a,hg:r.hg,ag:r.ag,pens:r.pens,winner:r.winner};
+        });
+        setResults(nres);setPstats(nps);
+        setStageIdx(stageIdx+1);
+        setScreen("stageres");
+        return;
+      }
+    }
+    setScreen("menu");
+  };
   if(screen==="stageres"){
     const prevIdx=stageIdx-1;
     const champ=results[champKey()];
@@ -1570,7 +1615,7 @@ export default function App(){
       </div>)}
       </div>
       {champ&&<div style={{padding:10,textAlign:"center",color:C.yel,fontWeight:"bold",fontSize:14}}>{"★★★"} {tnOf(champ.winner).toUpperCase()} — {tr("champ")} {"★★★"}</div>}
-      <Btn onClick={()=>setScreen("menu")} color={C.grn}>{tr("cont")}</Btn>
+      <Btn onClick={advanceFromResults} color={C.grn}>{tr("cont")}</Btn>
     </div>);
   }
 
