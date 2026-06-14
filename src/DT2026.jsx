@@ -56,7 +56,7 @@ let C={...THEMES.dark};
 const UI={
 es:{newGame:"NUEVA PARTIDA",load:"CARGAR PARTIDA",pick:"Elegir seleccion",nation:"SELECCION",group:"GRUPO",stage:"ETAPA",next:"PROXIMO",
  elim:"Tu seleccion quedo eliminada. Podes seguir el torneo.",play:"JUGAR PARTIDO",simRound:"SIMULAR RONDA",
- squad:"PLANTEL (26)",tactics:"TACTICA Y ALINEACION",groups:"GRUPOS Y TERCEROS",bracket:"CUADRO FINAL",scorers:"GOLEADORES",stats:"ESTADISTICAS",topAssist:"ASISTENCIAS",topRated:"MEJOR PROMEDIO",topG:"GOLEADORES",noStats:"Jugá partidos para ver estadísticas.",colG:"G",colA:"A",colPJ:"PJ",colAvg:"NOTA",
+ squad:"PLANTEL (26)",tactics:"TACTICA Y ALINEACION",groups:"GRUPOS Y TERCEROS",bracket:"CUADRO FINAL",scorers:"GOLEADORES",stats:"ESTADISTICAS",podium:"PODIO FINAL",gold:"CAMPEON",silver:"SUBCAMPEON",bronze:"TERCER PUESTO",topScorer:"GOLEADOR",bestPlayer:"MEJOR JUGADOR",ceremony:"CEREMONIA DE PREMIACION",goals:"goles",newTourney:"NUEVO TORNEO",topAssist:"ASISTENCIAS",topRated:"MEJOR PROMEDIO",topG:"GOLEADORES",noStats:"Jugá partidos para ver estadísticas.",colG:"G",colA:"A",colPJ:"PJ",colAvg:"NOTA",
  save:"GUARDAR PARTIDA",exit:"SALIR AL MENU",back:"VOLVER",cont:"CONTINUAR",resume:"REANUDAR PARTIDO",pause:"PAUSA / CAMBIOS",
  instant:"RESULTADO INSTANTANEO",injured:"LESIONADOS",champ:"CAMPEON DEL MUNDO",congrats:"¡¡FELICITACIONES, DT!! ¡GLORIA ETERNA!",
  finished:"TORNEO FINALIZADO",pos:"POS",player:"JUGADOR",age:"EDAD",fit:"FIS",val:"VAL",rt:"NOTA",eff:"EF",diamond:"ROMBO",years:"años",card:"Ficha",
@@ -76,7 +76,7 @@ es:{newGame:"NUEVA PARTIDA",load:"CARGAR PARTIDA",pick:"Elegir seleccion",nation
  attrGK:["Agilidad","Juego aereo","Vel. salida","Distribucion","Posicionam.","Saque largo","Juego pies","Reflejos","Mando area","Decisiones","Liderazgo","Atajadas"]},
 en:{newGame:"NEW GAME",load:"LOAD GAME",pick:"Choose your nation",nation:"NATION",group:"GROUP",stage:"STAGE",next:"NEXT",
  elim:"Your team is out. You can follow the tournament.",play:"PLAY MATCH",simRound:"SIMULATE ROUND",
- squad:"SQUAD (26)",tactics:"TACTICS & LINEUP",groups:"GROUPS & 3RD PLACES",bracket:"KNOCKOUT BRACKET",scorers:"TOP SCORERS",stats:"STATISTICS",topAssist:"TOP ASSISTS",topRated:"BEST RATED",topG:"TOP SCORERS",noStats:"Play matches to see statistics.",colG:"G",colA:"A",colPJ:"GP",colAvg:"RTG",
+ squad:"SQUAD (26)",tactics:"TACTICS & LINEUP",groups:"GROUPS & 3RD PLACES",bracket:"KNOCKOUT BRACKET",scorers:"TOP SCORERS",stats:"STATISTICS",podium:"FINAL PODIUM",gold:"CHAMPION",silver:"RUNNER-UP",bronze:"THIRD PLACE",topScorer:"TOP SCORER",bestPlayer:"BEST PLAYER",ceremony:"AWARDS CEREMONY",goals:"goals",newTourney:"NEW TOURNAMENT",topAssist:"TOP ASSISTS",topRated:"BEST RATED",topG:"TOP SCORERS",noStats:"Play matches to see statistics.",colG:"G",colA:"A",colPJ:"GP",colAvg:"RTG",
  save:"SAVE GAME",exit:"EXIT TO MENU",back:"BACK",cont:"CONTINUE",resume:"RESUME MATCH",pause:"PAUSE / SUBS",
  instant:"INSTANT RESULT",injured:"INJURED",champ:"WORLD CHAMPION",congrats:"CONGRATULATIONS, GAFFER!! ETERNAL GLORY!",
  finished:"TOURNAMENT OVER",pos:"POS",player:"PLAYER",age:"AGE",fit:"FIT",val:"RAT",rt:"RTG",eff:"EFF",diamond:"DIAMOND",years:"yrs",card:"Profile",
@@ -96,7 +96,7 @@ en:{newGame:"NEW GAME",load:"LOAD GAME",pick:"Choose your nation",nation:"NATION
  attrGK:["Agility","Aerial","Rushing out","Distribution","Positioning","Long kicks","Footwork","Reflexes","Command","Decisions","Leadership","Shot stopping"]},
 pt:{newGame:"NOVO JOGO",load:"CARREGAR JOGO",pick:"Escolha sua selecao",nation:"SELECAO",group:"GRUPO",stage:"FASE",next:"PROXIMO",
  elim:"Sua selecao foi eliminada. Voce pode acompanhar o torneio.",play:"JOGAR PARTIDA",simRound:"SIMULAR RODADA",
- squad:"ELENCO (26)",tactics:"TATICA E ESCALACAO",groups:"GRUPOS E TERCEIROS",bracket:"CHAVEAMENTO",scorers:"ARTILHEIROS",stats:"ESTATISTICAS",topAssist:"ASSISTENCIAS",topRated:"MELHOR MEDIA",topG:"ARTILHEIROS",noStats:"Jogue partidas para ver estatisticas.",colG:"G",colA:"A",colPJ:"J",colAvg:"NOTA",
+ squad:"ELENCO (26)",tactics:"TATICA E ESCALACAO",groups:"GRUPOS E TERCEIROS",bracket:"CHAVEAMENTO",scorers:"ARTILHEIROS",stats:"ESTATISTICAS",podium:"PODIO FINAL",gold:"CAMPEAO",silver:"VICE-CAMPEAO",bronze:"TERCEIRO LUGAR",topScorer:"ARTILHEIRO",bestPlayer:"MELHOR JOGADOR",ceremony:"CERIMONIA DE PREMIACAO",goals:"gols",newTourney:"NOVO TORNEIO",topAssist:"ASSISTENCIAS",topRated:"MELHOR MEDIA",topG:"ARTILHEIROS",noStats:"Jogue partidas para ver estatisticas.",colG:"G",colA:"A",colPJ:"J",colAvg:"NOTA",
  save:"SALVAR JOGO",exit:"SAIR AO MENU",back:"VOLTAR",cont:"CONTINUAR",resume:"RETOMAR PARTIDA",pause:"PAUSA / SUBSTITUICOES",
  instant:"RESULTADO INSTANTANEO",injured:"LESIONADOS",champ:"CAMPEAO DO MUNDO",congrats:"PARABENS, TREINADOR!! GLORIA ETERNA!",
  finished:"TORNEIO ENCERRADO",pos:"POS",player:"JOGADOR",age:"IDADE",fit:"FIS",val:"VAL",rt:"NOTA",eff:"EF",diamond:"LOSANGO",years:"anos",card:"Ficha",
@@ -1245,7 +1245,6 @@ export default function App(){
         {champ&&<div style={{color:C.yel,fontWeight:"bold",marginTop:6,fontSize:13}}>
           {"★"} {tr("champ")}: {tnOf(champ.winner).toUpperCase()} {"★"}
           {champ.winner===my?<div style={{color:C.grn}}>{tr("congrats")}</div>:null}
-          {champ&&<div onClick={()=>window.open(DONATE_URL,"_blank")} style={{marginTop:6,padding:"6px 10px",cursor:"pointer",textAlign:"center",background:C.pick,color:C.grn,fontWeight:"bold",fontSize:12,border:"1px solid "+C.line}}>{tr("donateMsg")} — {tr("donate")}</div>}
         </div>}
         {mine&&!champ&&<div style={{color:C.wht,marginTop:4}}>{tr("next")}: <Chip i={mine.h}/> vs <Chip i={mine.a}/>{mine.pid?" (P"+mine.pid+")":""}</div>}
         {!mine&&!champ&&stageIdx<NS&&<div style={{color:C.red,marginTop:4}}>{tr("elim")}</div>}
@@ -1256,6 +1255,7 @@ export default function App(){
       <Btn onClick={()=>setScreen("tactics")}>{tr("tactics")}</Btn>
       <Btn onClick={()=>setScreen("groups")}>{tr("groups")}</Btn>
       <Btn onClick={()=>setScreen("bracket")}>{tr("bracket")}</Btn>
+      {champ&&<Btn onClick={()=>setScreen("podium")} color={C.yel}>{"\u2605"} {tr("ceremony")}</Btn>}
       <Btn onClick={()=>setScreen("stats")}>{tr("stats")}</Btn>
       <Btn onClick={()=>{setScreen("title");setMsg("");}} color={C.red}>{tr("exit")}</Btn>
       {msg&&<div style={{padding:10,color:C.grn,fontSize:12,fontWeight:"bold"}}>{msg}</div>}
@@ -1419,6 +1419,58 @@ export default function App(){
     </div>);
   }
 
+  if(screen==="podium"){
+    const champ=results[champKey()];
+    const fin=results[champKey()];
+    const p3=results["P"+BR().P3];
+    const gold=champ?champ.winner:null;
+    const silver=fin?(fin.winner===fin.h?fin.a:fin.h):null;
+    const bronze=p3?p3.winner:null;
+    // goleador y mejor jugador de pstats
+    const rows=Object.entries(pstats).map(([k,v])=>{const ix=k.lastIndexOf("|");return {name:k.slice(0,ix),t:+k.slice(ix+1),...v,avg:v.pj?v.rs/v.pj:0};});
+    const scorer=rows.filter(r=>r.g>0).sort((a,b)=>b.g-a.g||b.avg-a.avg)[0];
+    const mvp=rows.filter(r=>r.pj>=3).sort((a,b)=>b.avg-a.avg)[0];
+    const Medal=({color,pos,label,team,big})=>(<div style={{textAlign:"center",padding:big?"10px 8px":"6px 8px",flex:1}}>
+      <svg viewBox="0 0 40 40" style={{width:big?52:40,height:big?52:40}}>
+        <circle cx="20" cy="22" r="13" fill={color} stroke="#000" strokeWidth="1.5"/>
+        <circle cx="20" cy="22" r="9" fill="none" stroke="#000" strokeWidth="0.6" opacity="0.3"/>
+        <rect x="13" y="2" width="5" height="12" fill={C.red} opacity="0.8"/>
+        <rect x="22" y="2" width="5" height="12" fill={C.cyan} opacity="0.8"/>
+        <text x="20" y="27" textAnchor="middle" fontSize="13" fontWeight="bold" fill="#000">{pos}</text>
+      </svg>
+      <div style={{fontSize:10,color:C.gry,fontWeight:"bold",marginTop:2}}>{label}</div>
+      {team!=null&&<div style={{marginTop:4}}><Flag i={team} s={big?30:24}/></div>}
+      <div style={{fontSize:big?13:11,color,fontWeight:"bold",marginTop:3}}>{team!=null?tnOf(team):"-"}</div>
+    </div>);
+    return wrap(<div>
+      <Bar t={"\u2605 "+tr("ceremony")}/>
+      <div style={{padding:"14px 8px",background:C.statBg,borderBottom:"2px solid "+C.line}}>
+        <div style={{display:"flex",alignItems:"flex-end",justifyContent:"center"}}>
+          <Medal color={"#c0c0c0"} pos={2} label={tr("silver")} team={silver}/>
+          <Medal color={"#ffd700"} pos={1} label={tr("gold")} team={gold} big/>
+          <Medal color={"#cd7f32"} pos={3} label={tr("bronze")} team={bronze}/>
+        </div>
+      </div>
+      <div style={{padding:"10px 12px"}}>
+        {scorer&&<div style={{display:"flex",alignItems:"center",padding:"8px 6px",borderBottom:"1px solid "+C.line2}}>
+          <span style={{fontSize:22,width:38,color:C.grn,fontWeight:"bold"}}>{"\u26bd"}</span>
+          <div style={{flex:1}}><div style={{fontSize:10,color:C.gry,fontWeight:"bold"}}>{tr("topScorer")}</div>
+          <div style={{fontSize:14,color:C.grn,fontWeight:"bold"}}>{scorer.name} <Chip i={scorer.t}/></div></div>
+          <span style={{fontSize:18,color:C.grn,fontWeight:"bold"}}>{scorer.g} <span style={{fontSize:10,color:C.gry}}>{tr("goals")}</span></span>
+        </div>}
+        {mvp&&<div style={{display:"flex",alignItems:"center",padding:"8px 6px",borderBottom:"1px solid "+C.line2}}>
+          <span style={{fontSize:22,width:38,color:C.yel,fontWeight:"bold"}}>{"\u2605"}</span>
+          <div style={{flex:1}}><div style={{fontSize:10,color:C.gry,fontWeight:"bold"}}>{tr("bestPlayer")}</div>
+          <div style={{fontSize:14,color:C.yel,fontWeight:"bold"}}>{mvp.name} <Chip i={mvp.t}/></div></div>
+          <span style={{fontSize:18,color:C.yel,fontWeight:"bold"}}>{mvp.avg.toFixed(2)}</span>
+        </div>}
+      </div>
+      {gold===my&&<div style={{padding:"8px 12px",textAlign:"center",color:C.grn,fontWeight:"bold",fontSize:13}}>{tr("congrats")}</div>}
+      <div onClick={()=>window.open(DONATE_URL,"_blank")} style={{margin:"4px 12px",padding:"8px 10px",cursor:"pointer",textAlign:"center",background:C.pick,color:C.grn,fontWeight:"bold",fontSize:12,border:"1px solid "+C.line}}>{tr("donateMsg")} — {tr("donate")}</div>
+      <Btn onClick={()=>setScreen("menu")}>{tr("back")}</Btn>
+      <Btn onClick={()=>setScreen("edition")} color={C.cyan}>{tr("newTourney")}</Btn>
+    </div>);
+  }
   if(screen==="stats"){
     const rows=Object.entries(pstats).map(([k,v])=>{const ix=k.lastIndexOf("|");return {name:k.slice(0,ix),t:+k.slice(ix+1),...v,avg:v.pj?v.rs/v.pj:0};});
     const empty=rows.length===0;
